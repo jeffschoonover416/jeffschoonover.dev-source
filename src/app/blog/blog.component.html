@@ -1,0 +1,22 @@
+<h2>Jeff Schoonover's coding website</h2>
+
+<p>Hi!  I'm teaching myself how to code by making some software 
+  that is useful to me, and this website is to share and document that process.  
+  Along the way I'm learning web development, so the look and features 
+  of this website will get better and better as I go along.  Thanks for visiting!    
+</p>
+
+<h3>Blog</h3>
+
+<div class=blog-posts>
+<ul aria-label="Blog posts">
+    <li *ngFor="let blog of $blogPosts | async">
+      <a [routerLink]="blog.route">
+        <div class="blog-card">
+          <h2>{{blog.title}}</h2>
+          <p>{{blog.authorName}}</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

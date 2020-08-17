@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Observable } from 'rxjs';
+import { map, shareReplay } from 'rxjs/operators';
+import { ScullyRoutesService } from '@scullyio/ng-lib';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +11,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jsdevblog';
+
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+  .pipe(
+    map(result => result.matches),
+    shareReplay()
+  );
+
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    public scully: ScullyRoutesService) {}
+  
+  
+  $blogPosts = this.scully.available$.pipe(
+    map(routes =>
+      routes.filter(
+        route => 
+        route.route.startsWith('/posts/') && route.sourceFile.endsWith('.md')
+      )
+    )
+  );
+  
 }
