@@ -1,14 +1,17 @@
 ---
 title: Projects
-description: This is a test description
+description: Software projects I am working on
 publish: True
 authorName: Jeff Schoonover
+slug: projects
 
 ---
 
-## Routerbase
+## Projects
 
-My first project is a desktop app to make life easier for me at work, and I think others will find it useful as well.  
+### Routerbase
+
+I am working on my first project, a desktop app to make life easier for me at work.  I think others will find it useful as well.  
 
 Engineers and scientists in R&D make a lot of samples.  Samples with different starting chemistries.  Samples with varying process conditions.  Samples made specifically for a certain kind of analysis (like strength or conductivity).  And they often can't perform all the steps needed to make and analyze a sample in their own lab - a lot of work needs to be done at vendors or in other labs. 
 

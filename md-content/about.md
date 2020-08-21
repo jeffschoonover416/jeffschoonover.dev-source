@@ -1,13 +1,13 @@
 ---
 title: About
-description: About Description
+description: About me
 publish: True
 authorName: Jeff Schoonover
+slug: about
 
 ---
 
-## About 
-
+## About
 
 Welcome!  
 
@@ -24,4 +24,3 @@ Finally I could stand it no more and decided to learn how to make useful softwar
 Thanks for visiting!
 
 Jeff
-

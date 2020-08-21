@@ -5,9 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
-import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
 import { SoftwareComponent } from './software/software.component';
 
@@ -15,7 +15,6 @@ import { SoftwareComponent } from './software/software.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
     AboutComponent,
     SoftwareComponent,
   ],
@@ -24,7 +23,8 @@ import { SoftwareComponent } from './software/software.component';
     AppRoutingModule,
     ScullyLibModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

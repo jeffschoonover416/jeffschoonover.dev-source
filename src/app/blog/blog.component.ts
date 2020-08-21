@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { ScullyRoutesService } from '@scullyio/ng-lib';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 
 
 @Component({
@@ -11,11 +11,10 @@ import { map } from 'rxjs/operators';
 export class BlogComponent implements OnInit {
 
   constructor(private scully: ScullyRoutesService) { }
-    
+  
 
   ngOnInit() {
     //this.scully.available$.subscribe(routes => console.log(routes));
- 
   }
 
   $blogPosts = this.scully.available$.pipe(
@@ -26,6 +25,10 @@ export class BlogComponent implements OnInit {
       )
     )
   );
+
+  
+
+  
   
 
   
