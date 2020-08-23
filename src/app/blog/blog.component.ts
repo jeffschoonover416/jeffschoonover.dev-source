@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import { ScullyRoutesService } from '@scullyio/ng-lib';
+import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
 import { map, tap } from 'rxjs/operators';
 
 
@@ -23,7 +23,12 @@ export class BlogComponent implements OnInit {
         route => 
         route.route.startsWith('/posts/') && route.sourceFile.endsWith('.md')
       )
-    )
+    ),
+    map(filteredRoutes => {
+      return filteredRoutes.sort( (postA: ScullyRoute, postB: ScullyRoute) => {
+        return +new Date(postB['date'] - +new Date(postA['date']));
+      });
+    })
   );
 
   
