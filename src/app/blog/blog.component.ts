@@ -14,21 +14,28 @@ export class BlogComponent implements OnInit {
   
 
   ngOnInit() {
+    //Good for troubleshooting.  Make sure all the routes you think should be there are
     //this.scully.available$.subscribe(routes => console.log(routes));
   }
 
   $blogPosts = this.scully.available$.pipe(
-    map(routes =>
+    //Start with array of all available (publish=true) routes
+    map((routes: ScullyRoute[]) =>  
       routes.filter(
-        route => 
-        route.route.startsWith('/posts/') && route.sourceFile.endsWith('.md')
+        //Look at each route in the array, and keep only .md files with /posts/ route
+        //(that is all the blog posts)
+        //sourcefile? has the question mark because some routes might not have a sourcefile
+        (route: ScullyRoute) => 
+        route.route.startsWith('/posts/') && route.sourceFile?.endsWith('.md')
       )
     ),
-    map(filteredRoutes => {
+    //Sort the array of filtered routes in descending order *before* passing it to the 
+    //async pipe in the html code
+    map((filteredRoutes: ScullyRoute[]) => {
       return filteredRoutes.sort( (postA: ScullyRoute, postB: ScullyRoute) => {
-        return +new Date(postB['date'] - +new Date(postA['date']));
+        return ((+new Date(postB['date'])) - (+new Date(postA['date'])));
       });
-    })
+    }),
   );
 
   

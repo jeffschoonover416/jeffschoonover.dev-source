@@ -4,7 +4,7 @@ description: Here are the ways I have seen companies and individuals keep track 
 publish: True
 authorName: Jeff Schoonover
 slug: current-options-for-materials-data-preservation
-date: 2020-08-19
+date: 2020-08-19T12:00:00.000Z
 
 ---
 
