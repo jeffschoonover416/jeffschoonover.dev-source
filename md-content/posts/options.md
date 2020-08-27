@@ -10,7 +10,7 @@ date: 2020-08-19T12:00:00.000Z
 
 ## Current options for materials data preservation
 
-In the [post on my motivation to make Routerbase software](posts/motivation-to-make-routerbase), we went through how most engineers store project data with PowerPoint, Excel and Outlook, and organize that data with an elaborate folder structure on their computer.  Using these tools, it is hard to:
+In the <a ng-reflect-router-link="/posts/motivation-to-make-routerbase" href="/posts/motivation-to-make-routerbase" _ngcontent-gtb-c130="">last post</a>, I went through how most engineers store project data with PowerPoint, Excel and Outlook, and organize that data with an elaborate folder structure on their computer.  Using these tools, it is hard to:
 
 1. Keep track of the status of samples through a workflow
 2. Find historical data and all associated documentation files quickly and in context
