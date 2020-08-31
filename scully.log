@@ -327,3 +327,4 @@ running in watch-mode, routefile in source assets will not be updated
 This is a development tool for Scully applications.
 You can ignore the warning (TLS) or run scully with --no-warning
 ****************************************************************************************
+The file [33m.\md-content\posts\customizing-the-[39m is empty, scully will ignore.

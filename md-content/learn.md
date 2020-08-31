@@ -19,7 +19,6 @@ I'm making this website with the Angular web framework and Scully.  I'm using An
 
 ### Building
 
-- How to insert pictures with Markdown in a Scully/Angular app.  With Scully, I can write the blog posts in Markdown instead of HTML, but I need to learn the details.  (Do I put them on the internet/Netlify somewhere or on Github?  Do I link with the Angular router or with a standard HTML hyperlink?)
 - Markdown formatting.  For example, highlight code blocks in a markdown file.
 
 ```typescript

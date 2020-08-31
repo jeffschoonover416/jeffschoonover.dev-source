@@ -3,6 +3,10 @@
         "angular",
         "angular's",
         "schoonover",
-        "scully"
+        "scully",
+        "scullyio"
+    ],
+    "cSpell.ignoreWords": [
+        "jsdevblog"
     ]
 }
