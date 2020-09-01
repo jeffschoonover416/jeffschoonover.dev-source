@@ -4,13 +4,13 @@ description: Here are the ways I have seen companies and individuals keep track 
 publish: True
 authorName: Jeff Schoonover
 slug: current-options-for-materials-data-preservation
-date: 2020-08-19T12:00:00.000Z
+date: '2020-08-19'
 
 ---
 
 ## Current options for materials data preservation
 
-In the <a ng-reflect-router-link="/posts/motivation-to-make-routerbase" href="/posts/motivation-to-make-routerbase" _ngcontent-gtb-c130="">last post</a>, I went through how most engineers store project data with PowerPoint, Excel and Outlook, and organize that data with an elaborate folder structure on their computer.  Using these tools, it is hard to:
+In the [last post](/posts/2020/08/motivation-to-make-routerbase), I went through how most engineers store project data with PowerPoint, Excel and Outlook, and organize that data with an elaborate folder structure on their computer.  Using these tools, it is hard to:
 
 1. Keep track of the status of samples through a workflow
 2. Find historical data and all associated documentation files quickly and in context
@@ -19,7 +19,7 @@ However, there are existing software programs that try to address these issues. 
 
 ## Microsoft OneNote
 
-I used OneNote about 6 years ago and found that it was very good at (surprise) taking notes.  Mostly I put meeting notes and summaries of background research for my different projects.  However, it wasn't easy for me to capture workflow status or keep a bunch of files associated with each process step organized.  And for most project notes, it was easier to use PowerPoint, treating each slide likea page.  PowerPoint is often used as a notebook of record for many projects because it is sharable and usually on the screen already during a meeting.
+I used OneNote about 6 years ago and found that it was very good at (surprise) taking notes.  Mostly I put meeting notes and summaries of background research for my different projects.  However, it wasn't easy for me to capture workflow status or keep a bunch of files associated with each process step organized.  And for most project notes, it was easier to use PowerPoint, treating each slide like a page.  PowerPoint is often used as a notebook of record for many projects because it is sharable and usually on the screen already during a meeting.
 
 ## Microsoft Project
 

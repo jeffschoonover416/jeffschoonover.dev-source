@@ -39,18 +39,19 @@ Here is typical syntax for using the Router when you are writing an app and when
 <!-- The _ngcontent tag provides the correct CSS styling -->
 ```
 
-Scully will configure your Markdown link to use the Router if the following two conditions are met:
+You don't put `[routerLink]` into the Markdown hyperlink.  The `ng build` command compiles your Angular app and converts that syntax into something a browser can use, but it does not look at your Markdown files when compiling.  Scully takes care of your Markdown files and will use the Router on a link if the following two conditions are met:
 
 1. The link reference matches one of the ScullyRoutes that it finds when it scans your app (`npm run scully -- --scanRoutes` is the terminal command, and Scully will store your routes for your convenience in /assets/scully-routes.json)
 2. The link is a local link with a relative URL
 
-It is important to have the initial "/" in the link for this to work.  To see the difference, here are 3 links to my About page:
+It is important to have the initial "/" in the link for this to work.  An ending "/" is optional.  To see the difference, here are 4 links to my About page:
 
-- With the slash [/about](/about)
+- With the slash at beginning [/about](/about)
+- With a slash at both beginning and end [/about/](/about/)
 - Without the slash [about](about)
 - Absolute [https://jeffschoonover.dev/about](https://jeffschoonover.dev/about)
 
-Try them!  They will all get you there, but you will be able to tell the difference.  Also check the source code to see how they were compiled into HTML.
+Try them!  They will all get you there, but you will be able to tell the difference.  
 
 Happy coding!
 

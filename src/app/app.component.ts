@@ -22,14 +22,4 @@ export class AppComponent {
     private breakpointObserver: BreakpointObserver,
     public scully: ScullyRoutesService) {}
   
-  
-  $blogPosts = this.scully.available$.pipe(
-    map(routes =>
-      routes.filter(
-        route => 
-        route.route.startsWith('/posts/') && route.sourceFile.endsWith('.md')
-      )
-    )
-  );
-  
 }

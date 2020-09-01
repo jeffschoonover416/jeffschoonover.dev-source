@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
-import { map, tap } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 
 @Component({
@@ -37,11 +37,4 @@ export class BlogComponent implements OnInit {
       });
     }),
   );
-
-  
-
-  
-  
-
-  
 }
