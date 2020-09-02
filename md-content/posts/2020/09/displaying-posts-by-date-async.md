@@ -1,6 +1,6 @@
 ---
 title: Display a list of your posts sorted by date with Angular and Scully
-description: Here is how you change the icon and the text in the browser tab for your website with Angular
+description: How to use *ngFor and the async pipe in combination with Scully's route service to display a list of markdown blog posts by date.
 published: true
 author: Jeff Schoonover
 date: '2020-09-01'
@@ -128,7 +128,7 @@ The issue is that the "Z" at the end indicates Greenwich Mean Time.  I'm in New 
 </div>
 ```
 
-The `| async` is needed because we are dealing with an observable, which is an asynchronous data stream.  However, in our particular case it is just an array.  The `aria-label` tag is for accessability.
+The `| async` is needed because we are dealing with an observable, which is an asynchronous data stream.  However, in our particular case it is just an array.  The `aria-label` tag is for accessibility.
 
 The "|" after blog.date above uses Angular's date formatting.  Here is the link for more info at the [official Angular docs](https://angular.io/api/common/DatePipe/), which has the whole list of available ways to format your date.
 
