@@ -8,15 +8,13 @@ import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { SoftwareComponent } from './software/software.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    SoftwareComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

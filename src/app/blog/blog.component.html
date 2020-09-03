@@ -12,7 +12,7 @@
 
 <div class=blog-posts>
 <ul aria-label="Blog posts">
-    <li *ngFor="let blog of $blogPosts | async">
+    <li *ngFor="let blog of $blogPosts | async" class="mat-elevation-z7">
       <a [routerLink]="blog.route">
         <div class="blog-card">
           <h2>{{blog.title}}</h2>

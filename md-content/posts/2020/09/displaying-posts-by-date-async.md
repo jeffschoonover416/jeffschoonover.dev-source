@@ -97,7 +97,7 @@ export class BlogComponent implements OnInit {
 }
 ```
 
-The most important thing for me to wrap my head around with this code is that the observable `this.scully.available$` sends out a ScullyRoute array each time it fires.  For my use case as a simple blog it should just need to be called once and I get the array that is in `/assets/scully-routes.json`.  I imported `ScullyRoute` from `@scullyio/ng-lib` and used it to type the observable stream to keep things straight and get type support.
+The most important thing for me to wrap my head around with this code is that the observable `this.scully.available$` sends out a ScullyRoute array each time it fires.  For my use case as a simple blog it should just need to be called once and I get the array that is in `/assets/scully-routes.json` (if it looks like a mess when you open it up, Shift+Alt+F in VS Code).  I imported `ScullyRoute` from `@scullyio/ng-lib` and used it to type the observable stream to keep things straight and get type support.
 
 Here is my short explanation of the rxjs operators used in this code:
 

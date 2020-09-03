@@ -9,11 +9,11 @@ slug: projects
 
 ## Projects
 
-### Routerbase
+## Routerbase
 
 I am working on my first project, a desktop app to make life easier for me at work.  I think others will find it useful as well.  
 
-Engineers and scientists in R&D make a lot of samples.  Samples with different starting chemistries.  Samples with varying process conditions.  Samples made specifically for a certain kind of analysis (like strength or conductivity).  And they often can't perform all the steps needed to make and analyze a sample in their own lab - a lot of work needs to be done at vendors or in other labs. 
+Engineers and scientists in R&D make a lot of samples.  Samples with different starting chemistries.  Samples with varying process conditions.  Samples made specifically for a certain kind of analysis (like strength or conductivity).  And they often can't perform all the steps needed to make and analyze a sample in their own lab - a lot of work needs to be done at vendors or in other labs.
 
 I need software that does the following:
 
@@ -34,12 +34,11 @@ This first screen has all the tags on the left.  This is similar to how you sear
 ![RB-step-sketch](https://res.cloudinary.com/dmntqdxsy/image/upload/v1597575321/jsdevblog/RB-step-sketch_d5d91m.png)
 Here, a network diagram of all the steps associated with this router is displayed.  A new step is added by clicking in that area, and links can be dragged from one step to another.  In the picture, Step 3 is selected and its details and associated files/pictures would be displayed on the right (could also be edited).  Step 4 has a dashed outline because it has not been completed yet.
 
-More to come!
+Here are a couple posts on the background and need for Routerbase:
+
+- [Motivation to make Routerbase](/posts/2020/08/motivation-to-make-routerbase)
+- [Current options for materials data preservation](/posts/2020/08/current-options-for-materials-data-preservation)
+
+More to come, once this website is under control!
 
 Built with [Angular](https://angular.io/) for a framework, [Angular Material](https://material.angular.io/) to make it pretty, [Electron](https://www.electronjs.org/) to make it a Windows app, and the [D3](https://d3js.org/) visualization library for the network diagram.
-
-
-
-
-
-

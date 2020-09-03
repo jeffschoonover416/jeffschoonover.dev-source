@@ -19,8 +19,6 @@ No field exists in isolation, and it is really handy to know how to code in any 
 
 >"The best time to plant a tree was 20 years ago.  The second best time is right now."
 
-Finally I could stand it no more and decided to learn how to make useful software programs and websites, to help both myself and others.  This website is the public journal of that process.  Thanks for visiting, and feel free to get ahold of me through e-mail (hello@jeffschoonover.dev) or [LinkedIn](https://www.linkedin.com/in/jeffrey-schoonover-362959a/)
-
-Thanks for visiting!
+Finally I could stand it no more and decided to learn how to make useful software programs and websites, to help both myself and others.  This website is the public journal of that process.  Thanks for visiting, and feel free to get ahold of me through e-mail (hello@jeffschoonover.dev) or [LinkedIn](https://www.linkedin.com/in/jeffrey-schoonover-362959a/).
 
 Jeff

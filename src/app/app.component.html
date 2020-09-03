@@ -1,16 +1,26 @@
-<mat-toolbar color="primary" fxLayout="row">
+<mat-toolbar class="mat-elevation-z10" color="primary" fxLayout="row">
     <div>
         <a class="valign-center" mat-icon-button [routerLink]="['']">
             <mat-icon>home</mat-icon>
             <div style="margin-left:5px;">Jeff Schoonover</div>
         </a> 
     </div>
-    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" fxHide.xs>
         <ul fxLayout fxLayoutGap="20px" class="menu-items">
             <li><a [routerLink]="['/about']">About</a></li>
             <li><a [routerLink]="['/learn']">Learn in Public</a></li>
             <li><a [routerLink]="['/projects']">Projects</a></li>
         </ul>
+    </div>
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" fxHide.gt-xs>
+        <a class="valign-center" mat-icon-button [matMenuTriggerFor]="menu" aria-label="additional links">
+            <mat-icon>more_vert</mat-icon>
+        </a>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item [routerLink]="['/about']">About</button>
+            <button mat-menu-item [routerLink]="['/learn']">Learn in Public</button>
+            <button mat-menu-item [routerLink]="['/projects']">Projects</button>
+        </mat-menu>
     </div>
 </mat-toolbar>
 <router-outlet></router-outlet>

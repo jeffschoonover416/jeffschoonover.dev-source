@@ -6,7 +6,7 @@ author: Jeff Schoonover
 date: '2020-09-01'
 ---
 
-If you have a blog in development using Scully and have written any posts that include code blocks, you will immediately miss the syntax highlighting that we take for granted in any editor.  Syntax highlighting makes code much easier to read.  For example, compare a line of javascript code without highlighting `return ((+new Date(postB['date'])) - (+new Date(postA['date'])));` to one with highlighting:
+As I started writing posts that included lines of code, I immediately missed the syntax highlighting that we take for granted in any editor and on most coding websites.  Syntax highlighting makes code much easier to read.  For example, compare a line of javascript code without highlighting `return ((+new Date(postB['date'])) - (+new Date(postA['date'])));` to one with highlighting:
 
 ```js
 return ((+new Date(postB['date'])) - (+new Date(postA['date'])));
