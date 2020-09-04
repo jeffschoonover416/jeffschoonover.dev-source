@@ -20,9 +20,11 @@ a:hover, a:active {
 }
 
 mat-toolbar {
+  position: -webkit-sticky;
   position: sticky;
-  position: -webkit-sticky; /* For macOS/iOS Safari */
-  top: 0; /* Sets the sticky toolbar to be on top */
+  top: -1px;
+  //position: -webkit-sticky; /* For macOS/iOS Safari */
+  /* Sets the sticky toolbar to be on top */
   // z-index: 24; /* z is set in the html with the mat-elevation class */
 }
 
