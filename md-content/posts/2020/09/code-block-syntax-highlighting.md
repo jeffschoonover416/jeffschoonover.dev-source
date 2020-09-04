@@ -3,8 +3,11 @@ title: Code block syntax highlighting in Markdown files with Scully
 description: Scully has built-in support for prism.js, a very popular code syntax highlighting package.  Learn how to incorporate it into your website and get your code blocks highlighted.
 published: true
 author: Jeff Schoonover
+slug: code-block-syntax-highlighting-in-markdown-with-scully
 date: '2020-09-01'
 ---
+
+## Code block syntax highlighting in Markdown files with Scully
 
 As I started writing posts that included lines of code, I immediately missed the syntax highlighting that we take for granted in any editor and on most coding websites.  Syntax highlighting makes code much easier to read.  For example, compare a line of javascript code without highlighting `return ((+new Date(postB['date'])) - (+new Date(postA['date'])));` to one with highlighting:
 

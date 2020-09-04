@@ -3,6 +3,7 @@ title: Building a personal website with Angular and Scully
 description: Background on how I made the decision to build this website with Angular and Scully given the many different tools available for making websites these days
 published: true
 author: Jeff Schoonover
+slug: building-a-personal-website-with-angular-and-scully
 date: '2020-08-25'
 ---
 

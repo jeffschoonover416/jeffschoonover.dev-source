@@ -1,8 +1,9 @@
 ---
-title: Customize the browser tab display with Angular and Scully
+title: Customize the browser tab display with Angular
 description: Here is how you change the icon and the text in the browser tab for your website with Angular
 published: true
 author: Jeff Schoonover
+slug: customize-the-browser-tab-display-with-angular
 date: '2020-08-31'
 ---
 
