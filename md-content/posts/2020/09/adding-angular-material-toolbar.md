@@ -158,6 +158,6 @@ mat-toolbar {
 }
 ```
 
-The styling on the `a` and `a:hover, a:active` links was important for the list items in the toolbar.  `text-decoration: none` turns off the underline that is normally associated with a hyperlink.  The `mat-toolbar` styles are intended to keep the toolbar hovering at the top of the screen even as you scroll down.
+The styling on the `a` and `a:hover, a:active` links was important for the list items in the toolbar.  `text-decoration: none` turns off the underline that is normally associated with a hyperlink.  The `mat-toolbar` styles are intended to keep the toolbar hovering at the top of the screen even as you scroll down.  This works on most browsers but I have not yet found a solution for Safari iOS, where the toolbar scrolls with the rest of the page.
 
 That's it!  Hope this was super helpful for you as you customize your own toolbar.  E-mail me with any questions or comments and happy coding!
