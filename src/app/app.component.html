@@ -1,7 +1,14 @@
 <mat-toolbar class="mat-elevation-z10" color="primary" fxLayout="row">
     <div>
-        <a class="valign-center" mat-icon-button [routerLink]="['']">
+        <!-- <a class="valign-center" mat-icon-button [routerLink]="['']">
             <mat-icon>home</mat-icon>
+            <div style="margin-left:5px;">Jeff Schoonover</div>
+        </a>  -->
+        <a class="valign-center" [routerLink]="['']">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="22px" height="22px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
             <div style="margin-left:5px;">Jeff Schoonover</div>
         </a> 
     </div>
@@ -13,8 +20,14 @@
         </ul>
     </div>
     <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" fxHide.gt-xs>
-        <a class="valign-center" mat-icon-button [matMenuTriggerFor]="menu" aria-label="additional links">
+        <!-- <a class="valign-center" mat-icon-button [matMenuTriggerFor]="menu" aria-label="additional links">
             <mat-icon>more_vert</mat-icon>
+        </a> -->
+        <a class="valign-center" [matMenuTriggerFor]="menu" aria-label="additional links">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+            </svg>
         </a>
         <mat-menu #menu="matMenu">
             <button mat-menu-item [routerLink]="['/about']">About</button>
