@@ -833,3 +833,8 @@ No configuration for route "[33m/posts/:year/:month/:slugId[39m" found. Skippi
       ----------------
       
 No configuration for route "[33m/posts/:year/:month/:slugId[39m" found. Skipping
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------

@@ -4,7 +4,7 @@
     width: 80%;
     padding: 30px;
     font-size: large;
-    line-height: 1.75;
+    line-height: 1.6;
 }
 
 .blog-post img {
@@ -13,4 +13,14 @@
     margin-right: auto;
     max-width: 600px;
     width: 90%;
+}
+
+.valign-center {
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+  }
+
+a {
+    color: black;
 }
