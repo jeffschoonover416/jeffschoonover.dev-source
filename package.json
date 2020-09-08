@@ -30,6 +30,7 @@
     "@scullyio/ng-lib": "^1.0.0-beta.2",
     "@scullyio/scully": "^1.0.0-beta.3",
     "rxjs": "~6.5.5",
+    "scully-plugin-disable-angular": "^5.5.0",
     "tslib": "^2.0.1",
     "zone.js": "~0.10.3"
   },
