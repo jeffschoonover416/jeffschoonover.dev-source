@@ -11,7 +11,7 @@
     "scully": "scully",
     "scully:serve": "scully serve",
     "jamit": "ng build && npm run scully -- --scanRoutes && npm run scully serve",
-    "jam-prod": "ng build --prod && npm run scully -- --nw"
+    "jam-prod": "ng build --prod && npm run scully -- --scanRoutes --nw"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +38,7 @@
     "@angular-devkit/build-angular": "^0.1000.8",
     "@angular/cli": "^10.0.8",
     "@angular/compiler-cli": "^10.0.14",
+    "@flowaccount/scully-plugin-angular-delay": "0.0.9",
     "@types/jasmine": "^3.5.14",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.12.54",
