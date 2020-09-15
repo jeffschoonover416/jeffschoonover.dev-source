@@ -15,5 +15,3 @@ I really wanted to add a way for people following along with me to get an email 
 2. [Tania Rascia](https://www.taniarascia.com/) blogs about web development.  She uses Substack, a service for any author who wants to put out a newsletter.  It is free to use until you start charging your subscribers, after which it looks like they take 10%.  
 
 So I decided to go with [Substack](https://substack.com/) for now.  The sign-up process is pretty standard, and they provide code to embed in your website that has a form input for the email address to subscribe to (which I prefer over a link with the same form).  The only question was where to put it.  After experimenting for awhile, I made a separate JoinEmailComponent.  The extra link to add made me rethink the right hand toolbar menu, so I simplified it by making it always a drop-down menu from the "hamburger" icon to the with 3 horizontal bars.  
-
-Fame, Fortune, and Glory here I come!

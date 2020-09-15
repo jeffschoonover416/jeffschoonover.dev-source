@@ -1,0 +1,28 @@
+<div class="welcome">
+    <h2>
+      Learn to build fast, secure websites and desktop apps with the Angular framework!
+    </h2>
+  
+    <p>
+      Hi!  I'm teaching myself how to code by making some software that is useful to me, and this website is to share and document that process.  Along the way I'm learning web development, so the look and features of this website will get better and better as I go along.  Please e-mail me at hello@jeffschoonover.dev with any and all questions, comments and corrections.  All the source code for this site is at this public <a style="text-decoration-line: underline;" href="https://github.com/jeffschoonover416/jeffschoonover.dev-source">Github repository</a>. Thanks for visiting!    
+    </p>
+  
+    <br>
+    
+    <h2>Blog</h2>
+  
+  </div>
+  
+  
+  <div class="blog-posts">
+    <ul aria-label="Blog posts">
+      <li *ngFor="let blog of $blogPosts | async">
+        <a [routerLink]="blog.route">
+          <div class="blog-card">
+            <h2>{{blog.title}}</h2>
+            <p>{{blog.date | date: 'mediumDate'}}</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>

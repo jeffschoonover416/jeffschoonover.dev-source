@@ -6,6 +6,9 @@ author: 'Jeff Schoonover'
 slug: measure-the-performance-of-your-website-with-lighthouse
 date: '2020-09-08'
 ---
+
+## Measure the performance of your website with Lighthouse
+
 Lighthouse measures the performance of any website, right within Chrome Dev Tools!  It will also give you suggestions to improve your site's speed, search engine optimization (SEO) and accessibility.  In many ways it lets you know how Google sees your website, which in turn will affect your rank in its search results.  Yoast has an introductory [article on Lighthouse](https://yoast.com/google-lighthouse/) that I found very helpful (did you know that Google prioritizes mobile user experience and site performance in its rankings?).  With that, let's take a look and see how my new website is doing and how I can improve.
 
 To open Lighthouse, open Chrome Dev Tools by pressing ctrl-shift-I inside Chrome.  I'm currently using Chrome 85, and Lighthouse is the last menu option in line with Elements, Console, Sources, etc.  You probably have to click the double arrows to see the rest of the menu options:

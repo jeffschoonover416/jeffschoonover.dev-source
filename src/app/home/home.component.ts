@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class AppComponent {
-  title = 'jsdevblog';
+export class HomeComponent {
 
   constructor(
     private scully: ScullyRoutesService) {}
@@ -32,4 +31,5 @@ export class AppComponent {
         });
       }),
     );
+
 }

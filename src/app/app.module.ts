@@ -2,28 +2,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { ScullyLibModule } from '@scullyio/ng-lib';
-//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//import { MaterialModule } from './material.module';
-//import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AppComponent } from './app.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ScullyLibModule,
-    //BrowserAnimationsModule,
-    //MaterialModule,
-    //FlexLayoutModule
+    
+    BrowserAnimationsModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
