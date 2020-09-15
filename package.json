@@ -11,7 +11,7 @@
     "scully": "scully",
     "scully:serve": "scully serve",
     "jamit": "ng build && npm run scully -- --scanRoutes && npm run scully serve",
-    "jam-prod": "ng build -- --prod --stats-json && npm run scully -- --scanRoutes --nw"
+    "jam-prod": "ng build --prod --stats-json && npm run scully -- --scanRoutes --nw"
   },
   "private": true,
   "dependencies": {
