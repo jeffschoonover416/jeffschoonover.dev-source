@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "scully": "scully",
     "scully:serve": "scully serve",
-    "jamit": "ng build && npm run scully -- --scanRoutes && npm run scully serve",
+    "jamit": "ng build && npm run scully -- --scanRoutes && npm run scully -- --watch",
+    "jamitng": "ng build && npm run scully -- --routeFilter '*2020/09*' && npm run scully serve",
     "jam-prod": "ng build --prod --stats-json && npm run scully -- --scanRoutes --nw"
   },
   "private": true,
