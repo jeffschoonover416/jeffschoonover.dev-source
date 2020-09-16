@@ -2118,3 +2118,22 @@ Using stored unhandled routes!.
    To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
 ----------------------------------
 Received Kill command
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+ The render plugin "[33mdelayAngular[39m has thrown the below error,
+              while trying to render route "[33m/about[39m"
+              Scully will exitError: No tsconfig file src\tsconfig.json found
+
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+ The render plugin "[33mdelayAngular[39m has thrown the below error,
+              while trying to render route "[33m/about[39m"
+              Scully will exitSyntaxError: Unexpected token / in JSON at position 0
+
+Received Kill command
