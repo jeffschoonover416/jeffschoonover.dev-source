@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Observable } from 'rxjs';
 import {
   ScullyRoute,
@@ -11,8 +11,10 @@ import { map } from 'rxjs/operators';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
+  links$: Observable<ScullyRoute[]> = this.scully.available$;
   blogPosts$: Observable<any>;
 
   constructor(
@@ -39,8 +41,9 @@ export class HomeComponent {
             return ((+new Date(postB['date'])) - (+new Date(postA['date'])));
           });
         }),
-      ));  
-    
+      )
+    );
   }
 
+ 
 }
