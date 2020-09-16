@@ -21,7 +21,9 @@ export class HomeComponent {
     private scully: ScullyRoutesService,
     private transferStateService: TransferStateService
   ) {}
-    blogPosts$ = this.scully.available$.pipe(
+  
+  blogPosts$ = this.transferStateService.useScullyTransferState(
+    'blogPostRoutes', this.scully.available$.pipe(
       //Start with array of all available (publish=true) routes
       map((routes: ScullyRoute[]) =>  
         routes.filter(
@@ -39,6 +41,6 @@ export class HomeComponent {
           return ((+new Date(postB['date'])) - (+new Date(postA['date'])));
         });
       }),
-    );
+    ));
 }
 
