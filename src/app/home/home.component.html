@@ -12,11 +12,15 @@
     <h2>Blog</h2>
   
   </div>
-  
+
+  <!-- <span *ngFor="let r of blogs$ | async">
+    <a [routerLink]="r.route">{{ r.route }}</a>
+    <br />
+  </span> -->
   
   <div class="blog-posts">
     <ul aria-label="Blog posts">
-      <li *ngFor="let blog of blogPosts$ | async">
+      <li *ngFor="let blog of blogs$ | async">
         <a [routerLink]="blog.route">
           <div class="blog-card">
             <h2>{{blog.title}}</h2>
