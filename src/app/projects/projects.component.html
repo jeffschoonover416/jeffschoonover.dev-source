@@ -1,0 +1,58 @@
+<div class="container">
+    <h2 id="projects">Projects</h2>
+
+<h2 id="routerbase">Routerbase</h2>
+
+<p>
+    I am working on my first project, a desktop app to make life easier for me at work.  I think others will find it useful as well.
+</p>
+<p>
+    Engineers and scientists in R&amp;D make a lot of samples.  Samples with different starting chemistries.  Samples with varying process conditions.  Samples made specifically for a certain kind of analysis (like strength or conductivity).  And they often can't perform all the steps needed to make and analyze a sample in their own lab - a lot of work needs to be done at vendors or in other labs.
+</p>
+<p>
+    I need software that does the following:
+</p>
+<ol>
+    <li>Keep track of the status of samples through a workflow</li>
+    <li>Find historical data and all associated documentation files quickly and in context</li>
+</ol>
+<p>
+    In Routerbase, you create a router for each sample or set of samples.  The router is comprised of steps.  As the samples finish each step and start the next one, the step can be marked as complete and any files associated with that step can be drag-and-dropped directly onto that step.  Files can also be directly associated with routers.
+</p>
+<p>
+    Routers are grouped by using tags rather than a hierarchical folder system.  For my work, I will give each router a Project tag and an Alloy tag that I can use to sort and search with later.  Other possible tags are the commercial product the samples are associated with, a key contact person or customer, or anything else.  Routerbase keeps track of dates as well.
+</p>
+<p>
+    All the data generated in Routerbase will be stored in a JSON file, which is a human-readable text file that is the standard format for internet communication (when you submit a form on a website, chances are good the data is sent to the server in the JSON format).  
+</p>
+<p>
+    Here are sketches of two of the main screens in the program.  
+</p>
+<p>
+    <img src="https://res.cloudinary.com/dmntqdxsy/image/upload/v1597575317/jsdevblog/RB-router-sketch_bxdzll.png" alt="RB-router-sketch"> 
+    This first screen has all the tags on the left.  This is similar to how you search for products on <a href="www.amazon.com">Amazon</a> or <a href="www.mcmastercarr.com">McMaster Carr</a>.  The routers that match the criteria are shown with cards.  When you select one of those routers there is a new screen with the router details:
+</p>
+<p>
+    <img src="https://res.cloudinary.com/dmntqdxsy/image/upload/v1597575321/jsdevblog/RB-step-sketch_d5d91m.png" alt="RB-step-sketch">
+    Here, a network diagram of all the steps associated with this router is displayed.  A new step is added by clicking in that area, and links can be dragged from one step to another.  In the picture, Step 3 is selected and its details and associated files/pictures would be displayed on the right (could also be edited).  Step 4 has a dashed outline because it has not been completed yet.
+</p>
+<p>
+    Here are a couple posts on the background and need for Routerbase:
+</p>
+
+<ul>
+    <li>
+        <a href="/posts/2020/08/motivation-to-make-routerbase">Motivation to make Routerbase</a>
+    </li>
+    <li>
+        <a href="/posts/2020/08/current-options-for-materials-data-preservation">Current options for materials data preservation</a>
+    </li>
+</ul>
+<p>
+    More to come, once this website is under control!
+</p>
+<p>
+    Built with <a href="https://angular.io/">Angular</a> for a framework, <a href="https://material.angular.io/">Angular Material</a> to make it pretty, <a href="https://www.electronjs.org/">Electron</a> to make it a Windows app, and the <a href="https://d3js.org/">D3</a> visualization library for the network diagram.
+</p>
+</div>
+<app-footer></app-footer>

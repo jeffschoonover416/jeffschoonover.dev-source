@@ -1,0 +1,24 @@
+import { Component, OnInit } from '@angular/core';
+import { ScullyRoute, ScullyRoutesService, TransferStateService } from '@scullyio/ng-lib';
+import { map } from 'rxjs/operators';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
+})
+export class HomeComponent implements OnInit {
+  blogs$ = this.sts.useScullyTransferState(
+    'blogRoutes',
+    this.srs.available$.pipe(
+      map((routeList) => routeList.filter((route: ScullyRoute) => route.route.startsWith(`/posts/`))),
+      map((blogs) => blogs.sort((a, b) => (a.date < b.date ? 1 : -1)))
+    )
+  );
+
+  ngOnInit() {
+        
+      }
+
+  constructor(private srs: ScullyRoutesService, private sts: TransferStateService) {}
+}

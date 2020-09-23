@@ -1,0 +1,21 @@
+footer {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 80%;
+    font-size: large;
+    line-height: 1.6;
+}
+
+hr {
+    max-width: 800px;
+}
+
+.valign-center {
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+  }
+
+a {
+    color: black;
+}

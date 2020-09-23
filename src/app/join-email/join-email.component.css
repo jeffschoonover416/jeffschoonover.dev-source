@@ -1,0 +1,15 @@
+* {
+    font-size: large;
+    line-height: 1.6;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 80%;
+    padding: 30px;
+}
+
+.center {
+    text-align: center;
+}
