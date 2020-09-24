@@ -1,6 +1,8 @@
-import { ScullyConfig } from '@scullyio/scully';
+import { ScullyConfig, setPluginConfig } from '@scullyio/scully';
 const { OptimizeCSSPlugin } = require('scully-plugin-optimize-css');
 const { MinifyHtml } = require('scully-plugin-minify-html');
+
+setPluginConfig('md',  { enableSyntaxHighlighting: true });
 
 export const config: ScullyConfig = {
   projectRoot: "./src",

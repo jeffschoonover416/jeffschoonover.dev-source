@@ -29,7 +29,7 @@ export const config: ScullyConfig = {
 }
 ```
 
-The only thing left to do is import your chosen prismjs theme into your `styles.css` file, which is in your src folder:
+The only thing left to do is import your chosen prismjs theme into your `styles.css` file, which is in your src folder.  Be sure to put the import (and all other imports) at the very top of the file before any other css:
 
 ```css
 /* styles.css */
