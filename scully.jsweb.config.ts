@@ -1,6 +1,5 @@
 import { ScullyConfig, setPluginConfig } from '@scullyio/scully';
-const { OptimizeCSSPlugin } = require('scully-plugin-optimize-css');
-const { MinifyHtml } = require('scully-plugin-minify-html');
+//const { OptimizeCSSPlugin } = require('scully-plugin-optimize-css');
 
 setPluginConfig('md',  { enableSyntaxHighlighting: true });
 
@@ -9,8 +8,7 @@ export const config: ScullyConfig = {
   projectName: "jsweb",
   outDir: './dist/static',
   defaultPostRenderers: [
-    OptimizeCSSPlugin,
-    MinifyHtml
+    //OptimizeCSSPlugin,
   ],
   routes: {
     '/posts/:id': {
