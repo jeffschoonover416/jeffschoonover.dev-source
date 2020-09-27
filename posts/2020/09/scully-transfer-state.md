@@ -69,4 +69,8 @@ blogs$ = this.sts.useScullyTransferState(
 
 ```
 
+One more aspect to keep in mind is how Transfer State stores the state.  The default way is to put a data.json file in the same folder of the index.html files of routes with state (which are whatever routes have the component with the state and its children).  This is not so important for the use case above, but would get important pretty fast in web apps.  There is a discussion on the [Scully Gitter](https://gitter.im/scullyio/community?at=5ec3e1f070f28c384b84ffb0) site (May 19, 2020) for more info.
+
+Remember that the observable needs to be subscribed to in order to activate.  Above, the Angular async pipe in the HTML subscribed and unsubscribed (to avoid memory leaks) for us.  But without that async pipe, you need some other code to actually use the data in order for it to be generated.  Read more about the async pipe in the [Angular Docs](https://angular.io/api/common/AsyncPipe).
+
 Happy coding!
