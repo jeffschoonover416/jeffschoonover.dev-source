@@ -29,21 +29,66 @@ My first trial CSP was to shut everything off, just to see exactly how reporting
   for = "/*"
     [headers.values]
     
-    Report-To: {
+    Report-To = '''{
         "group":"default",
         "max_age":31536000,
         "endpoints":[{"url":"https://jeffschoonover.report-uri.com/a/d/g"}],
         "include_subdomains":true
-    }
-    NEL: {
+    }'''
+    NEL = '''{
         "report_to":"default",
         "max_age":31536000,
         "include_subdomains":true
-    }
+    }'''
     Content-Security-Policy = '''
     default-src 'none';
     report-uri https://jeffschoonover.report-uri.com/r/d/csp/enforce;
     report-to report-uri;'''
-
 ```
 
+Wow, this worked exactly as it was supposed to.  Absolutely everything was blocked except for the raw HTML.  With that test completed, I added in scripts and styles from 'self', images from Cloudinary, and fonts from Google.  I also made sure to set a policy for the non-fetch directives since they don't use `default-src` as a fallback (source for this list is this [Google CSP article](https://developers.google.com/web/fundamentals/security/csp), and the descriptions are from [Mozilla Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)): 
+
+- base-uri - restricts the URLs which can be used in a document's <base> element. If this value is absent, then any URI is allowed.
+- form-action - Restricts the URLs which can be used as the target of a form submissions from a given context.
+- frame-ancestors - Specifies valid parents that may embed a page using <frame>, <iframe>, <object>, <embed>, or <applet>.
+- plugin-types - Restricts the set of plugins that can be embedded into a document by limiting the types of resources which can be loaded.  [The plugin-types directive is only used if you are allowing plugins with object-src, so I do not need it]
+- report-uri - Instructs the user agent to report attempts to violate the Content Security Policy. These violation reports consist of JSON documents sent via an HTTP POST request to the specified URI.
+- sandbox - Enables a sandbox for the requested resource similar to the <iframe> sandbox attribute.
+
+
+```bash
+# netlify.toml 2nd iteration
+
+[build]
+  command = "npm run jam-prod"
+  publish = "dist/static"
+
+[[headers]]
+  # Set the default header to the one we want for documents
+  for = "/*"
+    [headers.values]
+    
+    Report-To = '''{
+        "group":"default",
+        "max_age":31536000,
+        "endpoints":[{"url":"https://jeffschoonover.report-uri.com/a/d/g"}],
+        "include_subdomains":true
+    }'''
+    NEL = '''{
+        "report_to":"default",
+        "max_age":31536000,
+        "include_subdomains":true
+    }'''
+    Content-Security-Policy = '''
+    default-src 'none';
+    script-src 'self';
+    style-src 'self';
+    base-uri 'self';
+    font-src https://fonts.googleapis.com;
+    form-action 'none';
+    frame-ancestors 'none';
+    sandbox;
+
+    report-uri https://jeffschoonover.report-uri.com/r/d/csp/enforce;
+    report-to report-uri;'''
+```
