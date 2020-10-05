@@ -19,7 +19,7 @@
         "include_subdomains":true
     }'''
     Content-Security-Policy = '''
-    default-src 'none';
+    default-src 'self';
     script-src 'self';
     style-src 'self';
     base-uri 'self';

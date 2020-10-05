@@ -53,7 +53,7 @@ Wow, this worked exactly as it was supposed to.  Absolutely everything was block
 - frame-ancestors - Specifies valid parents that may embed a page with frames.
 - plugin-types - Restricts the set of plugins that can be embedded into a document by limiting the types of resources which can be loaded.  [The plugin-types directive is only used if you are allowing plugins with object-src, so I do not need it]
 - report-uri - Instructs the user agent to report attempts to violate the Content Security Policy. These violation reports consist of JSON documents sent via an HTTP POST request to the specified URI.
-- sandbox - Enables a sandbox for the requested resource similar to the <iframe> sandbox attribute.
+- sandbox - Enables a sandbox for the requested resource.
 
 
 ```bash
