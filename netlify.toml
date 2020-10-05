@@ -21,10 +21,10 @@
     Content-Security-Policy = '''
     default-src 'self';
     script-src 'self';
-    style-src 'self';
+    style-src 'self' https://fonts.googleapis.com;
     base-uri 'self';
     font-src https://fonts.googleapis.com;
-    img-src https://res.cloudinary.com;
+    img-src 'self' https://res.cloudinary.com;
     form-action 'none';
     frame-ancestors 'none';
     sandbox;
