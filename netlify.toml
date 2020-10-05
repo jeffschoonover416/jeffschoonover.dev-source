@@ -24,6 +24,7 @@
     style-src 'self';
     base-uri 'self';
     font-src https://fonts.googleapis.com;
+    img-src https://res.cloudinary.com;
     form-action 'none';
     frame-ancestors 'none';
     sandbox;
