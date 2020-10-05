@@ -7,17 +7,17 @@
   for = "/*"
     [headers.values]
     
-    Report-To: {
+    Report-To = '''{
         "group":"default",
         "max_age":31536000,
         "endpoints":[{"url":"https://jeffschoonover.report-uri.com/a/d/g"}],
         "include_subdomains":true
-    }
-    NEL: {
+    }'''
+    NEL = '''{
         "report_to":"default",
         "max_age":31536000,
         "include_subdomains":true
-    }
+    }'''
     Content-Security-Policy = '''
     default-src 'none';
     report-uri https://jeffschoonover.report-uri.com/r/d/csp/enforce;

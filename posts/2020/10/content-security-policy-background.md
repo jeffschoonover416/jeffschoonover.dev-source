@@ -30,7 +30,7 @@ To learn about CSP, I recommend this [Google CSP tutorial](https://csp.withgoogl
 
 A team from Google surveyed the internet and published a 2016 paper (available on the above link) that showed that >99% of CSPs on the internet were ineffective.  The biggest vulnerability you can have is if you allow inline scripts (that is, javascript embedded in your HTML files instead of in a separate file), but many CSPs do in fact allow this because it is so convenient.  The second biggest vulnerability is to put a list of whitelisted domains that you trust data from inside your CSP.  In theory this seems reasonable and the paper explains that this was one of the basic original ideas of the CSP.  But the way data from other websites are gathered can expose some unexpected vulnerabilities and it really is not recommended.
 
-So what is recommended for a website that needs inline Javascript?  The paper recommends the use of hashes or nonces.
+So what is recommended for a website that needs inline Javascript (hint: most sites don't, you can put your js in a separate file)?  The paper recommends the use of hashes or nonces.
 
 ## Hashes and nonces
 
