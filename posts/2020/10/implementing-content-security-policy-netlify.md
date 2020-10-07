@@ -11,9 +11,9 @@ date: '2020-10-04'
 
 For the syntax and general guide to Netlify headers, I followed this [article on http headers](https://simonhearne.com/2019/http-headers-fast-and-secure/) by Simon Hearne.  
 
-To test different policies, I used Netlify's preview build feature.  If you create a new branch on your Github repository that is connected to Netlify to build your site, Netlify will automatically build a preview site for you with a random link.  Just log in to your Netlify account to find it.
+To test different policies, I used Netlify's preview build feature.  If you create a new branch on your Github repository that is connected to Netlify to build your site, Netlify will automatically build a preview site for you with a random link.  Just log in to your Netlify account to find it.  The localhost servers will not take the `netlify.toml` file into account to enforce the CSP.
 
-The Simon Hearne article has a good discussion and links about the idea of logging and reporting any issues with your CSP.  This can help you make sure that your CSP is set up correctly and also see any attacks that are being rejected.  [Report-uri](https://report-uri.com/) was really easy to set up and gives the correct headers to paste into your CSP.  The `Report-To` and `NEL` (network error logging) headers are copied from my report-uri setup.
+The Hearne article has a good discussion and links about the idea of logging and reporting any issues with your CSP.  This can help you make sure that your CSP is set up correctly and also see any attacks that are being rejected.  [Report-uri](https://report-uri.com/) was really easy to set up and gives the correct headers to paste into your CSP.  The `Report-To` and `NEL` (network error logging) headers are copied from my report-uri.com setup.
 
 My first trial CSP was to shut everything off, just to see exactly how reporting would work and how the site would look.  My expectation is that I would not have my Cloudinary pictures or the i-frame on the email sign up page:
 
@@ -53,8 +53,9 @@ Wow, this worked exactly as it was supposed to.  Absolutely everything was block
 - frame-ancestors - Specifies valid parents that may embed a page with frames.
 - plugin-types - Restricts the set of plugins that can be embedded into a document by limiting the types of resources which can be loaded.  [The plugin-types directive is only used if you are allowing plugins with object-src, so I do not need it]
 - report-uri - Instructs the user agent to report attempts to violate the Content Security Policy. These violation reports consist of JSON documents sent via an HTTP POST request to the specified URI.
-- sandbox - Enables a sandbox for the requested resource.
+- sandbox - Enables a sandbox for the requested resource.  I allow scripts in sandboxes because my website has sandboxes with scripts and sandboxes enforce a same-origin policy.
 
+Most of the below came from making allowances until CSP stopped blocking (the browser console lets you know exactly what was blocked and what CSP change would allow loading) and the whole site loaded.
 
 ```bash
 # netlify.toml 2nd iteration
@@ -82,14 +83,15 @@ Wow, this worked exactly as it was supposed to.  Absolutely everything was block
     Content-Security-Policy = '''
     default-src 'none';
     script-src 'self';
-    style-src 'self';
+    style-src 'self' https://fonts.googleapis.com;
     base-uri 'self';
-    font-src https://fonts.googleapis.com;
+    font-src https://fonts.gstatic.com;
     img-src https://res.cloudinary.com;
     form-action 'none';
     frame-ancestors 'none';
-    sandbox;
+    sandbox allow-scripts;
     report-uri https://jeffschoonover.report-uri.com/r/d/csp/enforce;
     report-to report-uri;'''
 ```
 
+At this point everything is working except for 1. the i-frame (as expected) and 2. the inline CSS.  Having inline CSS is great for speed, but bad for security.  I would have thought just javascript would be a security threat, but inline CSS attacks can also be bad even though not as common.  Angular puts inline CSS, and even though they sanitize any input having lots of inline CSS makes a strict CSP difficult.  So my goal is to put as much of my CSS as possible into a separate file, and load only the inline CSS I need to for speed and protect it with hashes.  Fortunately, the Scully team just released a new plugin that does just that for Angular projects.  I'll add that to the project and finalize the CSP style-src directive in the next post.

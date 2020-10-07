@@ -6,12 +6,14 @@ import { LearnComponent } from './learn.component';
 import { SharedModule } from '../shared/shared.module';
 
 
+
 @NgModule({
   declarations: [LearnComponent],
   imports: [
     CommonModule,
     LearnRoutingModule,
-    SharedModule
+    SharedModule,
+    
   ]
 })
 export class LearnModule { }

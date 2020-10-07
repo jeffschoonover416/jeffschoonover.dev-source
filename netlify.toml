@@ -27,6 +27,6 @@
     img-src 'self' https://res.cloudinary.com;
     form-action 'none';
     frame-ancestors 'none';
-    sandbox;
+    sandbox allow-scripts;
     report-uri https://jeffschoonover.report-uri.com/r/d/csp/enforce;
     report-to report-uri;'''
