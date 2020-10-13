@@ -50,7 +50,7 @@ Wow, this worked exactly as it was supposed to.  Absolutely everything was block
 
 - base-uri - restricts the URLs which can be used in a document's <base> element. If this value is absent, then any URI is allowed.
 - form-action - Restricts the URLs which can be used as the target of a form submissions from a given context.
-- frame-ancestors - Specifies valid parents that may embed a page with frames.
+- frame-ancestors - Specifies valid parents that may embed a page with frames.  After reading on the internet about how vulnerable frames are, I took my i-frame out of my website.
 - plugin-types - Restricts the set of plugins that can be embedded into a document by limiting the types of resources which can be loaded.  [The plugin-types directive is only used if you are allowing plugins with object-src, so I do not need it]
 - report-uri - Instructs the user agent to report attempts to violate the Content Security Policy. These violation reports consist of JSON documents sent via an HTTP POST request to the specified URI.
 - sandbox - Enables a sandbox for the requested resource.  I allow scripts in sandboxes because my website has sandboxes with scripts and sandboxes enforce a same-origin policy.
@@ -83,7 +83,7 @@ Most of the below came from making allowances until CSP stopped blocking (the br
     Content-Security-Policy = '''
     default-src 'none';
     script-src 'self';
-    style-src 'self' https://fonts.googleapis.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     base-uri 'self';
     font-src https://fonts.gstatic.com;
     img-src https://res.cloudinary.com;
@@ -94,4 +94,4 @@ Most of the below came from making allowances until CSP stopped blocking (the br
     report-to report-uri;'''
 ```
 
-At this point everything is working except for 1. the i-frame (as expected) and 2. the inline CSS.  Having inline CSS is great for speed, but bad for security.  I would have thought just javascript would be a security threat, but inline CSS attacks can also be bad even though not as common.  Angular puts inline CSS, and even though they sanitize any input having lots of inline CSS makes a strict CSP difficult.  So my goal is to put as much of my CSS as possible into a separate file, and load only the inline CSS I need to for speed and protect it with hashes.  Fortunately, the Scully team just released a new plugin that does just that for Angular projects.  I'll add that to the project and finalize the CSP style-src directive in the next post.
+At this point everything is working except the inline CSS.  Having inline CSS is great for speed, but bad for security.  I would have thought just javascript would be a security threat, but inline CSS attacks can also be bad even though not as common.  Angular puts inline CSS, and even though they sanitize any input having lots of inline CSS makes a strict CSP difficult.  So my goal is to put as much of my CSS as possible into a separate file, and load only the inline CSS I need to for speed and protect it with hashes.  Fortunately, the Scully team just released a new plugin that does just that for Angular projects.  I'll add that to the project and finalize the CSP style-src directive in the next post.  In the meantime I have temporarily added `'unsafe-inline'` to the `script-src` directive.
