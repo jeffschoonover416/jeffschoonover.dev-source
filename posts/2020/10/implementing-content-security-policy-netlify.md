@@ -90,7 +90,7 @@ Most of the below came from making allowances until CSP stopped blocking (the br
     font-src https://fonts.gstatic.com;
     img-src https://res.cloudinary.com;
     form-action 'none';
-    frame-ancestors 'self';
+    frame-ancestors 'none';
     sandbox allow-scripts;
     report-uri https://jeffschoonover.report-uri.com/r/d/csp/enforce;
     report-to report-uri;'''
