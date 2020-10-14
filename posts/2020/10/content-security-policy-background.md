@@ -40,7 +40,7 @@ An [article by Roger Grimes](https://www.csoonline.com/article/2879073/all-you-n
 
 The SHA-2 hash of that quote is 38cf858b3c048fe44e825fc42ed61be0b4547207c4cf6d90490add90db7f2ec9, to give an idea of what they look like.  The thing about a hash is that you can know the hash (the output), but you are not able to use it to figure out the input.  So you could write a script for your website, calculate its hash, and put the hash in your CSP (which is public) with the rule that any script with that exact hash is allowed to run.  The Google CSP tutorial says that hashes are the preferred way of allowing scripts in the CSP for static sites like mine.
 
-An alternative to a hash for web apps or sites with dynamic scripts (whose hashes would be always changing) is a nonce, which is short for Number used Once.  You get your server to generate a random string that looks like a hash every time the page loads.  Assign that number to a variable, and put that variable as an attribute in the script tag you want to allow.  Note that unlike with a hash, any script with the correct nonce will run so it is less secure than a hash.  
+An alternative to a hash that could be used for web apps or sites with dynamic scripts (whose hashes would be always changing) is a nonce, which is short for Number used Once.  You get your server to generate a random string that looks like a hash every time the page loads.  Assign that number to a variable, and put that variable as an attribute in the script tag you want to allow.  Note that unlike with a hash, any script with the correct nonce will run so it is less secure than a hash.  
 
 ## My Content Security Policy
 

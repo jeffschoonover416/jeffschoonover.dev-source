@@ -55,7 +55,7 @@ Wow, this worked exactly as it was supposed to.  Absolutely everything was block
 - report-uri - Instructs the user agent to report attempts to violate the Content Security Policy. These violation reports consist of JSON documents sent via an HTTP POST request to the specified URI.
 - sandbox - Enables a sandbox for the requested resource.  I allow scripts in sandboxes because my website has sandboxes with scripts and sandboxes enforce a same-origin policy.
 
-Most of the below came from making allowances until CSP stopped blocking (the browser console lets you know exactly what was blocked and what CSP change would allow loading) and the whole site loaded.
+Most of the below came from making allowances until CSP stopped blocking (the browser console lets you know exactly what was blocked and what CSP change would allow loading) and the whole site loaded.  For example, `connect-src` is required for the `scully-routes.json` file
 
 ```bash
 # netlify.toml 2nd iteration
@@ -82,7 +82,8 @@ Most of the below came from making allowances until CSP stopped blocking (the br
     }'''
     Content-Security-Policy = '''
     default-src 'none';
-    script-src 'self';
+    connect-src 'self';
+    script-src 'self' 'sha256-qWkjXenVA+7n3jmaobevJVEkmjqeTL5bZFOIzf8OFG4=' 'sha256-JXy9GK9Sb50pLJz2b9lcBOflxoQuinKD1LXvTSon+AI=';
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     base-uri 'self';
     font-src https://fonts.gstatic.com;
@@ -94,4 +95,4 @@ Most of the below came from making allowances until CSP stopped blocking (the br
     report-to report-uri;'''
 ```
 
-At this point everything is working except the inline CSS.  Having inline CSS is great for speed, but bad for security.  I would have thought just javascript would be a security threat, but inline CSS attacks can also be bad even though not as common.  Angular puts inline CSS, and even though they sanitize any input having lots of inline CSS makes a strict CSP difficult.  So my goal is to put as much of my CSS as possible into a separate file, and load only the inline CSS I need to for speed and protect it with hashes.  Fortunately, the Scully team just released a new plugin that does just that for Angular projects.  I'll add that to the project and finalize the CSP style-src directive in the next post.  In the meantime I have temporarily added `'unsafe-inline'` to the `script-src` directive.
+At this point everything is working except the inline CSS.  Having inline CSS is great for speed, but bad for security.  I would have thought just javascript would be a security threat, but inline CSS attacks can also be bad even though not as common.  Angular puts inline CSS, and even though they sanitize any input having lots of inline CSS makes a strict CSP difficult.  So my goal is to put as much of my CSS as possible into a separate file, and load only the inline CSS I need to for speed and protect it with hashes.  Fortunately, the Scully team just released a new plugin that does just that for Angular projects.  I'll add that to the project and finalize the CSP style-src directive in the next post.  There are currently two inline scripts from Scully (checking to see if Scully has been generated, and the TransferState) whose hashes needed to be added to the CSP.  Since the state includes all the routes for the site, the transfer state script will change every time I write a new post.  The thought of updating the CSP every time I add a new post is giving new urgency to disabling Angular for this site and really minimizing Javascript!
