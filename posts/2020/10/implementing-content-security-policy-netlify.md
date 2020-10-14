@@ -55,7 +55,7 @@ Wow, this worked exactly as it was supposed to.  Absolutely everything was block
 - report-uri - Instructs the user agent to report attempts to violate the Content Security Policy. These violation reports consist of JSON documents sent via an HTTP POST request to the specified URI.
 - sandbox - Enables a sandbox for the requested resource.  I allow scripts in sandboxes because my website has sandboxes with scripts and sandboxes enforce a same-origin policy.
 
-Most of the below came from making allowances until CSP stopped blocking (the browser console lets you know exactly what was blocked and what CSP change would allow loading) and the whole site loaded.  For example, `connect-src` is required for the `scully-routes.json` file.  `frame-ancestors` had to be set to `self` because of an error related to not being able to create a history state object in a document with origin 'null'.  I think it has to do with the Angular Router because navigation was not working. 
+Most of the below came from making allowances until CSP stopped blocking (the browser console lets you know exactly what was blocked and what CSP change would allow loading) and the whole site loaded.  For example, `connect-src` is required for the `scully-routes.json` file.  `object-src` had to be set to `self` because of an error related to not being able to create a history state object in a document with origin 'null'.  I think it has to do with the Angular router because navigation was not working. 
 
 ```bash
 # netlify.toml 2nd iteration
@@ -86,6 +86,7 @@ Most of the below came from making allowances until CSP stopped blocking (the br
     script-src 'self' 'sha256-qWkjXenVA+7n3jmaobevJVEkmjqeTL5bZFOIzf8OFG4=' 'sha256-JXy9GK9Sb50pLJz2b9lcBOflxoQuinKD1LXvTSon+AI=';
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     base-uri 'self';
+    object-src 'self';
     font-src https://fonts.gstatic.com;
     img-src https://res.cloudinary.com;
     form-action 'none';
