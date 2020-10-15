@@ -53,7 +53,7 @@ Wow, this worked exactly as it was supposed to.  Absolutely everything was block
 - frame-ancestors - Specifies valid parents that may embed a page with frames.  After reading on the internet about how vulnerable frames are, I took my i-frame out of my website.
 - plugin-types - Restricts the set of plugins that can be embedded into a document by limiting the types of resources which can be loaded.  [The plugin-types directive is only used if you are allowing plugins with object-src, so I do not need it]
 - report-uri - Instructs the user agent to report attempts to violate the Content Security Policy. These violation reports consist of JSON documents sent via an HTTP POST request to the specified URI.
-- sandbox - Enables a sandbox for the requested resource.  I allow scripts in sandboxes because my website has sandboxes with scripts and sandboxes enforce a same-origin policy.  I also had to `allow-top-navigation` so that routing would work.
+- sandbox - Enables a sandbox for the requested resource.  Angular uses sandboxes and I had to allow scripts.  I also had to `allow-top-navigation` so that routing would work.
 
 Most of the below came from making allowances until CSP stopped blocking (the browser console lets you know exactly what was blocked and what CSP change would allow loading) and the whole site loaded.  For example, `connect-src` is required for the `scully-routes.json` file.  `object-src` had to be set to `self` because of an error related to not being able to create a history state object in a document with origin 'null'.  I think it has to do with the Angular router because navigation was not working. 
 
@@ -91,7 +91,7 @@ Most of the below came from making allowances until CSP stopped blocking (the br
     img-src https://res.cloudinary.com;
     form-action 'none';
     frame-ancestors 'none';
-    sandbox allow-scripts;
+    sandbox allow-scripts allow-top-navigation allow-same-origin;
     report-uri https://jeffschoonover.report-uri.com/r/d/csp/enforce;
     report-to report-uri;'''
 ```
