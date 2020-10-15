@@ -26,7 +26,7 @@
     
     font-src https://fonts.gstatic.com;
     img-src 'self' https://res.cloudinary.com;
-    form-action 'none';
+    
     
     sandbox allow-scripts;
     report-uri https://jeffschoonover.report-uri.com/r/d/csp/enforce;
