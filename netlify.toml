@@ -20,10 +20,10 @@
     }'''
     Content-Security-Policy = '''
     
-    connect-src 'self';
+    
     script-src 'self' 'sha256-qWkjXenVA+7n3jmaobevJVEkmjqeTL5bZFOIzf8OFG4=' 'sha256-JXy9GK9Sb50pLJz2b9lcBOflxoQuinKD1LXvTSon+AI=';
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    object-src 'self';
+    
     font-src https://fonts.gstatic.com;
     img-src 'self' https://res.cloudinary.com;
     form-action 'none';
