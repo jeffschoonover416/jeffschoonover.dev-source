@@ -28,6 +28,6 @@
     img-src 'self' https://res.cloudinary.com;
     
     
-    sandbox allow-scripts allow-top-navigation;
+    sandbox allow-scripts allow-top-navigation allow-same-origin;
     report-uri https://jeffschoonover.report-uri.com/r/d/csp/enforce;
     report-to report-uri;'''
