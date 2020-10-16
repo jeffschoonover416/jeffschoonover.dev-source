@@ -1,4 +1,4 @@
-<div class="welcome">
+<div class="container">
     <h2>
       Learn to build fast, secure websites and desktop apps with the Angular framework!
     </h2>
@@ -11,18 +11,19 @@
     
     <h2>Blog</h2>
   
-  </div>
+</div>
   
-  <div class="blog-posts">
-    <ul aria-label="Blog posts">
-      <li *ngFor="let blog of blogs$ | async" class="mat-elevation-z6">
-        <a [routerLink]="blog.route">
-          <div>
-            <h2>{{blog.title}}</h2>
-            <p>{{blog.date | date: 'mediumDate'}}</p>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
+<div class="blog-posts">
+  <ul aria-label="Blog posts">
+    <li *ngFor="let blog of blogs$ | async" class="mat-elevation-z6">
+      <a [routerLink]="blog.route">
+        <div>
+          <h2>{{blog.title}}</h2>
+          <p>{{blog.date | date: 'mediumDate'}}</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
 
