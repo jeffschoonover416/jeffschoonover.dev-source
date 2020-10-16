@@ -18,6 +18,7 @@
         "max_age":31536000,
         "include_subdomains":true
     }'''
+    X-Content-Type-Options = "nosniff"
     Content-Security-Policy = '''
       default-src 'none';
       connect-src 'self';
