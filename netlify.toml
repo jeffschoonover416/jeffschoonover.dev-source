@@ -23,10 +23,8 @@
     Content-Security-Policy = '''
       default-src 'none';
       connect-src 'self';
-      script-src 'self' 'sha256-DeEwILI+DR2eRZY+jywx4vO6hvRC3DjkKBtxKSWZYK4=';
-      style-src 'self' https://fonts.googleapis.com 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-9IBxIt5b/oJnMmtGZ9cSR7qeFAKbKO+0RjnCiTKeRs4='
-      'sha256-s5Jhx1DdOLYB9ULgTbDdGa7WtY5aLbmCkmT+tAkG7bY=' 'sha256-iZZqus/dxrxzS+C1bZd1ttk7sPpK+3R2ChU6nzGLWok=' 'sha256-hbycXJIZ4jYY+PWe9ITYtWQj2v79o75p/8wxX9qCbw0='
-      'sha256-5GdKXKhNRx2KvSTspXs0PbLj1jhQAMQ9TdGmxA0He9s=' 'sha256-ck/MeGWNExVHMvn9N1KhQVHaYPJZ+4+16h8jSoA3Hkw=' 'sha256-5vy+htg1PLtJdlXm1SowvRhj71D9LkPg+kSSw+ne3IE=';
+      script-src 'self' 'sha256-qWkjXenVA+7n3jmaobevJVEkmjqeTL5bZFOIzf8OFG4=' 'sha256-DeEwILI+DR2eRZY+jywx4vO6hvRC3DjkKBtxKSWZYK4=';
+      style-src 'self' https://fonts.googleapis.com 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-9IBxIt5b/oJnMmtGZ9cSR7qeFAKbKO+0RjnCiTKeRs4=' 'sha256-s5Jhx1DdOLYB9ULgTbDdGa7WtY5aLbmCkmT+tAkG7bY=' 'sha256-iZZqus/dxrxzS+C1bZd1ttk7sPpK+3R2ChU6nzGLWok=' 'sha256-hbycXJIZ4jYY+PWe9ITYtWQj2v79o75p/8wxX9qCbw0=' 'sha256-5GdKXKhNRx2KvSTspXs0PbLj1jhQAMQ9TdGmxA0He9s=' 'sha256-ck/MeGWNExVHMvn9N1KhQVHaYPJZ+4+16h8jSoA3Hkw=' 'sha256-5vy+htg1PLtJdlXm1SowvRhj71D9LkPg+kSSw+ne3IE=';
       font-src https://fonts.gstatic.com;
       img-src 'self' https://res.cloudinary.com;
       base-uri 'self';
