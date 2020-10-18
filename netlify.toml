@@ -24,7 +24,7 @@
       default-src 'none';
       connect-src 'self';
       script-src 'self' 'sha256-qWkjXenVA+7n3jmaobevJVEkmjqeTL5bZFOIzf8OFG4=' 'sha256-DeEwILI+DR2eRZY+jywx4vO6hvRC3DjkKBtxKSWZYK4=';
-      style-src 'self' https://fonts.googleapis.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
       font-src https://fonts.gstatic.com;
       img-src 'self' https://res.cloudinary.com;
       base-uri 'self';
