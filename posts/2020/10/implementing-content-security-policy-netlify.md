@@ -95,7 +95,7 @@ Most of the below came from making allowances until CSP stopped blocking (the br
     report-to report-uri;'''
 ```
 
-I had to put in a bunch of hashes for `style-src` because Angular/Scully puts CSS inline for performance.  So it was either move it out into a separate file, or put in the hashes.  This site is small enough that the copy/paste was not too painful.
+I learned a little more about specifying the `style-src` through experimenting.  Angular/Scully uses inline CSS for performance.  So you can specify `unsafe-inline`, but that is not recommended for security reasons.  I thought you could manually allow each inline style by adding its hash.  If you just put `self`, check the console in Chrome, and then add allow the hashes in `style-src` it will not work for every hash.  This is because some of the hashes are inline style attributes `<p style="color:green">This is a paragraph.</p>`and others are actual `<style>` elements.  This helpful [Stackoverflow post on style CSP hashes](https://stackoverflow.com/questions/52724956/why-doesnt-chrome-respect-my-content-security-policy-hashes) explains that you can use a hash to allow `<style>` elements but not the attributes.  
 
 There are currently two inline scripts from Scully (one checks to see if Scully has been generated, and the other is the TransferState) whose hashes needed to be added to the CSP.  Since the state includes all the routes for the site, the transfer state script will change every time I write a new post.  The thought of updating the CSP every time I add a new post is giving new urgency to disabling Angular for this site and really minimizing Javascript!
 
