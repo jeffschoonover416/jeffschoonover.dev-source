@@ -9,7 +9,7 @@ setPluginConfig('md',  { enableSyntaxHighlighting: true });
 export const config: ScullyConfig = {
   projectRoot: "./src",
   projectName: "jsweb",
-  //defaultPostRenderers,
+  defaultPostRenderers,
   outDir: './dist/static',
   routes: {
     '/posts/:id': {
