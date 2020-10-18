@@ -19,4 +19,8 @@ There are additional headers for website security besides the Content Security P
 
 Now for the good news - after implementing my Content Security Policy, but before adding any of these headers, I re-scanned by site at the Mozilla Observatory and got an A+.  The audit said that `X-Frame-Options` is not needed for me anymore since I have `frame-ancestors` in the CSP, and X-XSS-Protection is not needed since I have a strong CSP.  So I added #1 and am moving on.
 
-There are other headers for user privacy and site performance that I will look into next.  Happy Coding!
+The last HTTP header I want to add is another one covered in [Simon Hearne's 2019 post on headers](https://simonhearne.com/2019/http-headers-fast-and-secure/): `Feature-Policy`.  This header prevents an attacker from accessing the microphone, camera, and geolocation on your site:
+
+```bash
+Feature-Policy = "camera 'none'; geolocation 'none'; microphone 'none'"
+```
