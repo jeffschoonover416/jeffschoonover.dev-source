@@ -11,8 +11,8 @@
     "scully": "scully",
     "scully:serve": "scully serve",
     "jamit": "ng build --stats-json && npm run scully -- --removeStaticDist --scanRoutes && npm run scully serve",
-    "jam-prod-test": "ng build --prod && npm run scully -- --removeStaticDist --scanRoutes && npm run scully serve",
-    "jam-prod": "ng build --prod && npm run scully -- --removeStaticDist --scanRoutes"
+    "jam-prod-test": "ng build --prod --stats-json && npm run scully -- --removeStaticDist --scanRoutes && npm run scully serve",
+    "jam-prod": "ng build --prod --stats-json && npm run scully -- --removeStaticDist --scanRoutes"
   },
   "private": true,
   "dependencies": {
