@@ -1,25 +1,28 @@
-<mat-toolbar class="mat-elevation-z10" color="primary" fxLayout="row">
-    <div>
-        <a class="valign-center" [routerLink]="['']">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="22px" height="22px">
-                <path d="M0 0h24v24H0z" fill="none"/>
-                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-            </svg>
-            <div style="margin-left:5px;">Jeff Schoonover</div>
-        </a> 
-    </div>
-    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
-        <a class="valign-center" [matMenuTriggerFor]="menu" aria-label="menu link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28px" height="28px">
-                <path d="M0 0h24v24H0z" fill="none"/>
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-            </svg>
-        </a>
-        <mat-menu #menu="matMenu">
-            <button mat-menu-item [routerLink]="['/about']">About</button>
-            <button mat-menu-item [routerLink]="['/learn']">Learn in Public</button>
-            <button mat-menu-item [routerLink]="['/projects']">Projects</button>
-            <button mat-menu-item [routerLink]="['/join-email-list']">Join Email List</button>
-        </mat-menu>
-    </div>
-</mat-toolbar>
+<div>
+    <nav class="mat-elevation-z10" color="primary" fxLayout="row">
+        <div>
+            <a class="valign-center" [routerLink]="['']">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="22px" height="22px">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+                <div style="margin-left:5px;">Jeff Schoonover</div>
+            </a> 
+        </div>
+        <div fxFlex fxLayoutAlign="flex-end">
+            <a class="valign-center dropBtn" onclick="dropMenu()" aria-label="menu link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28px" height="28px" class="dropBtn">
+                    <path d="M0 0h24v24H0z" fill="none" class="dropBtn"/>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="dropBtn"/>
+                </svg>
+            </a>
+            <div id="navDropdown" class="dropdown">
+                <a [routerLink]="['/about']">About</a>
+                <a [routerLink]="['/learn']">Learn in Public</a>
+                <a [routerLink]="['/projects']">Projects</a>
+                <!-- <button mat-menu-item [routerLink]="['/join-email-list']">Join Email List</button> -->
+            </div>
+        </div>
+    </nav>
+
+</div>
