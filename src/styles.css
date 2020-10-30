@@ -45,9 +45,9 @@ nav a:hover, a:active {
     position: absolute;
     top: 45px;
     overflow: hidden;
+    z-index: 500;
     background-color: white;
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
-    z-index: 500;
     
 }
 
@@ -67,7 +67,15 @@ nav a:hover, a:active {
 
 .show { display: block }
 
-.dropBtn { text-decoration: none;}
+.dropBtn {
+    cursor: pointer;
+    color: white;
+    float: left;
+}
+
+.dropBtn:hover, .dropBtn:active {
+    color: lightgray;
+}
 
 .menu-items {
     margin: 0;

@@ -23,15 +23,13 @@
 <body class="mat-typography">
   <app-root></app-root>
   <script>
-    function dropMenu() {
-      document.getElementById("navDropdown").classList.toggle("show");
-    }
-    
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropBtn')) {
-        document.getElementById('navDropdown').classList.remove("show");
+    document.addEventListener('click', function (event) {
+	    if (event.target.closest('.dropBtn')) {
+        document.getElementById('navDropdown').classList.toggle("show");
+      } else {
+        document.getElementById("navDropdown").classList.remove("show");
       }
-    }
+    }, false);
   </script>
 </body>
 </html>
