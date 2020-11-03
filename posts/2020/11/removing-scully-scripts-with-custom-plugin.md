@@ -13,3 +13,5 @@ slugs:
 <script>try {window['scullyContent'] = {cssId:"_ngcontent-san-c98",html:document.body.innerHTML.split('<!--scullyContent-begin-->')[1].split('<!--scullyContent-end-->')[0]};} catch(e) {console.error('scully could not parse content');}</script>
 
 ---
+
+trying to figure out Git here!
