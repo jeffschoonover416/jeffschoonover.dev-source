@@ -23,7 +23,7 @@
     Content-Security-Policy = '''
       default-src 'none';
       connect-src 'self';
-      script-src 'self' 'sha256-qWkjXenVA+7n3jmaobevJVEkmjqeTL5bZFOIzf8OFG4=' 'sha256-uTzNGAvPVDl5Wz0rR3r5KeuxP82SC0gkXvCRJnk1chc=';
+      script-src none;
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
       font-src https://fonts.gstatic.com;
       img-src 'self' https://res.cloudinary.com;

@@ -1,9 +1,10 @@
 import { ScullyConfig, setPluginConfig } from '@scullyio/scully';
 const {DisableAngular} = require('scully-plugin-disable-angular');
+const { removeScullyScripts } = require('./plugins/removeScullyScripts');
 
 import 'prismjs/components/prism-yaml.js';
 
-const postRenderers = ['seoHrefOptimise', DisableAngular];
+const postRenderers = ['seoHrefOptimise', DisableAngular, removeScullyScripts];
 
 setPluginConfig('md',  { enableSyntaxHighlighting: true });
 
