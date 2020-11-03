@@ -2,14 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Jeff Schoonover</title>
-  <base href="/">
+  <title></title>
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:creator" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="description" content="">
+  <meta name="og:title" property="og:title" content="">
+  <meta name="og:description" property="og:description" content="">
+  <meta name="og:type" property="og:type" content="">
+  <meta name="og:url" property="og:url" content="">
+  <meta name="og:site_name" property="og:site_name" content="">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Learn to build fast, secure websites with Angular and Scully, and build desktop apps with Angular and Electron">
+  <base href="/">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
 </head>
 <body class="mat-typography">
   <app-root></app-root>
+  <script>
+    document.addEventListener('click', function (event) {
+	    if (event.target.closest('.dropBtn')) {
+        document.getElementById('navDropdown').classList.toggle("show");
+      } else {
+        document.getElementById("navDropdown").classList.remove("show");
+      }
+    }, false);
+  </script>
 </body>
 </html>

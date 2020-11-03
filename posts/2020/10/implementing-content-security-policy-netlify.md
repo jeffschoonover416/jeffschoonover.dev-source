@@ -51,7 +51,7 @@ Wow, this worked exactly as it was supposed to.  Absolutely everything was block
 - base-uri - restricts the URLs which can be used in a document's <base> element. If this value is absent, then any URI is allowed.
 - form-action - Restricts the URLs which can be used as the target of a form submissions from a given context.
 - frame-ancestors - Specifies valid parents that may embed a page with frames.  After reading on the internet about how vulnerable frames are, I took my i-frame out of my website.
-- plugin-types - Restricts the set of plugins that can be embedded into a document by limiting the types of resources which can be loaded.  [The plugin-types directive is only used if you are allowing plugins with object-src, so I do not need it]
+- plugin-types - Restricts the set of plugins that can be embedded into a document by limiting the types of resources which can be loaded.  (The plugin-types directive is only used if you are allowing plugins with object-src, so I do not need it).
 - report-uri - Instructs the user agent to report attempts to violate the Content Security Policy. These violation reports consist of JSON documents sent via an HTTP POST request to the specified URI.
 - sandbox - Enables a sandbox for the requested resource.  Angular uses sandboxes and I had to allow scripts.  I also had to `allow-same-origin` so that routing would work and the CSP would allow the site to write to the browser history.  Navigation needs to come from the same origin, and default is to provide a unique origin to the sandbox.
 

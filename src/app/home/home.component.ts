@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ScullyRoute, ScullyRoutesService, TransferStateService } from '@scullyio/ng-lib';
+import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
 import { map } from 'rxjs/operators';
 
 @Component({
@@ -9,14 +9,12 @@ import { map } from 'rxjs/operators';
 })
 export class HomeComponent {
 
-  blogs$ = this.sts.useScullyTransferState(
-    'blogRoutes',
-    this.srs.available$.pipe(
+  blogs$ = this.srs.available$.pipe(
       map((routeList) => routeList.filter((route: ScullyRoute) => route.route.startsWith(`/posts/`))),
       map((blogs) => blogs.sort((a, b) => (a.date < b.date ? 1 : -1)))
-    )
   );
+  
 
-  constructor(private srs: ScullyRoutesService, private sts: TransferStateService) {}
+  constructor(private srs: ScullyRoutesService) {}
 
 }
