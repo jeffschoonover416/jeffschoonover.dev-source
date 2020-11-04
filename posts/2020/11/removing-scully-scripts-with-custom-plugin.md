@@ -14,4 +14,3 @@ slugs:
 
 ---
 
-trying to figure out Git here!

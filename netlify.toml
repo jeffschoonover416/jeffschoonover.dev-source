@@ -30,7 +30,6 @@
       base-uri 'self';
       form-action 'none';
       frame-ancestors 'none';
-      sandbox allow-scripts allow-same-origin;
       report-uri https://jeffschoonover.report-uri.com/r/d/csp/enforce;
       report-to report-uri;'''
     
