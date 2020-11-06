@@ -1,6 +1,6 @@
 ---
 title: Get much faster load times on your Scully static website with the Scully Plugin Disable Angular
-description: null
+description: Implement the Scully Plugin Disable Angular to boost Scully static website performance.  It makes sense for blogs and other truly static sites.
 published: true
 author: 'Jeff Schoonover'
 slug: scully-plugin-disable-angular
@@ -24,7 +24,6 @@ The next thing to do was take out the ScullyTransferState from my app, which was
   # Set the default header to the one we want for documents
   for = "/*"
     [headers.values]
-    
     Report-To = '''{
         "group":"default",
         "max_age":31536000,
