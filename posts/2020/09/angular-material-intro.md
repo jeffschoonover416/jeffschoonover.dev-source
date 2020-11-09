@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: modern-website-styling-with-angular-material
 date: '2020-09-03'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Give your website modern styling with Angular Material

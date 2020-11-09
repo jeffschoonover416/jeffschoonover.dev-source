@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: improve-website-performance-by-embedding-icons
 date: '2020-09-14'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Improve your website's performance by embedding SVG icons

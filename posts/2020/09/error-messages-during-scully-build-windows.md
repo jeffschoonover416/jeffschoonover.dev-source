@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: ignore-these-error-messages-scully-build-windows
 date: '2020-09-26'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## You can ignore these error messages at the end of Scully builds in Windows

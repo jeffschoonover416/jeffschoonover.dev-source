@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: content-security-policy-background
 date: '2020-10-02'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Improve your website's security by implementing a content security policy

@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: markdown-file-route-slug-vs-slugs
 date: '2020-09-26'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## How to specify the route(s) for your rendered markdown files using "slug" and "slugs" in your markdown YAML header

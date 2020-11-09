@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: customize-the-browser-tab-display-with-angular
 date: '2020-08-31'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Customize the browser tab display with Angular

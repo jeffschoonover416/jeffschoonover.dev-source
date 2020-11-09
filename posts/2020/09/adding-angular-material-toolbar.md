@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: adding-a-responsive-angular-material-toolbar
 date: '2020-09-03'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Adding a responsive Angular Material toolbar to your website

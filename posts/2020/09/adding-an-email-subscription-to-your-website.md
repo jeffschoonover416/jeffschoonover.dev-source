@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: adding-an-email-subscription-to-your-website
 date: '2020-09-07'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Adding a email subscription to your website

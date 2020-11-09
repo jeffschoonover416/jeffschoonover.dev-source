@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: scully-transfer-state-implementation
 date: '2020-09-23'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Use Scully Transfer State to transition between the static and Angular versions of your website

@@ -5,7 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: measure-the-performance-of-your-website-with-lighthouse
 date: '2020-09-08'
-
+tags:
+  - jeffschoonover.dev
 ---
 
 

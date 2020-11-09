@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: using-angular-router-in-markdown
 date: '2020-08-30'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Using Angular's router in your Markdown file hyperlinks with Scully

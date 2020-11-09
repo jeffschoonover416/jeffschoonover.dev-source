@@ -5,6 +5,8 @@ published: true
 author: 'Jeff Schoonover'
 date: '2020-11-06'
 slug: dropdown-menu-script-when-angular-disabled
+tags:
+  - jeffschoonover.dev
 ---
 
 ## How to create a click dropdown menu with Javascript in a Scully-Angular project with Angular disabled  

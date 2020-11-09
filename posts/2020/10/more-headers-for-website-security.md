@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: more-headers-for-website-security
 date: '2020-10-16'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## More headers for website security

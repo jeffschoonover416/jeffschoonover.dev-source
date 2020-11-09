@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: display-a-list-of-posts-sorted-by-date-with-angular-and-scully
 date: '2020-09-01'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## How to display a list of your posts sorted by date with Angular and Scully

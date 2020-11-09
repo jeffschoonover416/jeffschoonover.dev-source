@@ -5,6 +5,8 @@ published: true
 author: 'Jeff Schoonover'
 slug: scully-plugin-disable-angular
 date: '2020-11-03'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Get much faster load times on your Scully static website with the Scully Plugin Disable Angular

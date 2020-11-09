@@ -5,7 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: decrease-initial-load-size-by-lazy-loading-modules
 date: '2020-09-17'
-
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Decrease your website's initial load size by lazy loading modules

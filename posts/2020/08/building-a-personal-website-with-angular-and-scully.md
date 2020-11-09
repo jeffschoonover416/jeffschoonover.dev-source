@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: building-a-personal-website-with-angular-and-scully
 date: '2020-08-25'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Building a personal website with Angular and Scully

@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: implementing-content-security-policy-netlify
 date: '2020-10-15'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Implementing a Content Security Policy on Netlify

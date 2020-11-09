@@ -5,6 +5,8 @@ published: true
 author: 'Jeff Schoonover'
 date: '2020-11-07'
 slug: remove-scripts-custom-scully-render-plugin
+tags:
+  - jeffschoonover.dev
 ---
 
 With Angular only used to build this site but not to run it (see the last post), there were some extra in-line scripts that Scully automatically puts in that were not being used anymore.  I wanted to remove them because the console was logging the error generated when the Content Security Policy blocked them.  You can take care of things like this with a Scully plugin.  The two most popular types of plugins are router plugins, which help Scully discover new routes and customize how to handle them, and render plugins, which modify the HTML.  Since we are removing scripts, we need a render plugin.  We can't remove all scripts because there is a script in the `index.html` file that controls the dropdown menu.  Here are the scripts to remove:

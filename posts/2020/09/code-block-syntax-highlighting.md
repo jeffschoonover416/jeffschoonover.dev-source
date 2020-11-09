@@ -5,6 +5,8 @@ published: true
 author: Jeff Schoonover
 slug: code-block-syntax-highlighting-in-markdown-with-scully
 date: '2020-09-01'
+tags:
+  - jeffschoonover.dev
 ---
 
 ## Code block syntax highlighting in Markdown files with Scully
