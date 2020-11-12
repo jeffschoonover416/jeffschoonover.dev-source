@@ -121,7 +121,7 @@ img {
     max-width: 1200px;
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     gap: 1rem;
 }
 
@@ -136,7 +136,7 @@ img {
     /* margin: 25px ; */
     /* max-width: 600px; */
     padding: 0px;
-    /* width: 90%; */
+    width: 90%;
     text-align: center;
 }
 
