@@ -1,7 +1,7 @@
 ---
 title: Filter blog posts by tag using Scully
 description: How to add tags to your blog posts, and then filter by them using Scully
-published: false
+published: true
 author: 'Jeff Schoonover'
 slug: scully-filter-posts-by-tag
 date: '2020-11-11'
