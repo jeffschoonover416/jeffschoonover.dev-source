@@ -9,10 +9,27 @@ import { map } from 'rxjs/operators';
 })
 export class HomeComponent {
 
-  blogs$ = this.srs.available$.pipe(
-      map((routeList) => routeList.filter((route: ScullyRoute) => route.route.startsWith(`/posts/`))),
+  scullyPosts$ = this.srs.available$.pipe(
+      map((routeList: ScullyRoute[]) => routeList.filter((route: ScullyRoute) => {
+        if (!route.tags) {
+          return false;
+        } else {
+          return(route.tags.includes("jeffschoonover.dev"));
+        };
+      })),
       map((blogs) => blogs.sort((a, b) => (a.date < b.date ? 1 : -1)))
   );
+
+  routerPosts$ = this.srs.available$.pipe(
+    map((routeList: ScullyRoute[]) => routeList.filter((route: ScullyRoute) => {
+      if (!route.tags) {
+        return false;
+      } else {
+        return(route.tags.includes("routerbase"));
+      };
+    })),
+    map((blogs) => blogs.sort((a, b) => (a.date < b.date ? 1 : -1)))
+);
   
 
   constructor(private srs: ScullyRoutesService) {}

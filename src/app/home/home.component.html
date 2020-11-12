@@ -9,21 +9,43 @@
   
     <br>
     
-    <h2>Blog</h2>
-  
 </div>
-  
+
 <div class="blog-posts">
-  <ul aria-label="Blog posts">
-    <li *ngFor="let blog of blogs$ | async" class="mat-elevation-z6">
-      <a [routerLink]="blog.route">
-        <div>
-          <h2>{{blog.title}}</h2>
-          <p>{{blog.date | date: 'mediumDate'}}</p>
-        </div>
-      </a>
-    </li>
-  </ul>
+  <div>
+    <ul>
+      <details>
+        <summary class="mat-h2">
+          Posts about making this website with Angular and Scully
+        </summary>
+        <li *ngFor="let blog of scullyPosts$ | async" class="mat-elevation-z6">
+          <a [routerLink]="blog.route">
+            <div fxLayout="column" fxLayoutAlign="left">
+              <h2>{{blog.title}}</h2>
+              <p>{{blog.date | date: 'mediumDate'}}</p>
+            </div>
+          </a>
+        </li>
+      </details>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <details>
+        <summary class="mat-h2">
+          Posts about making sample tracking software with Angular
+        </summary>
+        <li *ngFor="let blog of routerPosts$ | async" class="mat-elevation-z6">
+          <a [routerLink]="blog.route">
+            <div>
+              <h2>{{blog.title}}</h2>
+              <p>{{blog.date | date: 'mediumDate'}}</p>
+            </div>
+          </a>
+        </li>
+      </details>
+    </ul>
+  </div>
 </div>
 
 
