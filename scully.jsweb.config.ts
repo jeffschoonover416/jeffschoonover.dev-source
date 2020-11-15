@@ -12,7 +12,6 @@ export const config: ScullyConfig = {
   projectRoot: "./src",
   projectName: "jsweb",
   defaultPostRenderers: postRenderers,
-  handle404: "index",
   outDir: './dist/static',
   routes: {
     '/posts/:id': {
