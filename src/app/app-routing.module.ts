@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   
@@ -33,6 +34,8 @@ const routes: Routes = [
       "title": "Learn in Public - Jeff Schoonover, Angular development"
     } 
   },
+//{ path: '404', component: NotFoundComponent },
+  //{ path: '**', redirectTo: '/404' }
   
   //{ path: 'join-email-list', loadChildren: () => import('./join-email/join-email.module').then(m => m.JoinEmailModule), data: {"title": "Join E-mail"} },
 
