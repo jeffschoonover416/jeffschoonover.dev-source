@@ -9,8 +9,6 @@ tags:
   - jeffschoonover.dev
 ---
 
-## Use Scully Transfer State to transition between the static and Angular versions of your website
-
 When someone visits your Scully site, it first loads the static version for speed.  Then it loads the javascript from Angular on top of the static site to make it fully interactive.  If you have any async data in your static site it will be refreshed when the Angular component loads, causing a flash.  I noticed this in my list of blog posts on the home page, and there are several discussions about the issue on [Scully's Gitter channel](https://gitter.im/scullyio/community) (search for "transferstate").  Here is a quote from there:
 
 > Sander Elias @SanderElias Apr 28 10:17

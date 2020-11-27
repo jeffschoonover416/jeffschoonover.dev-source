@@ -11,12 +11,6 @@ const routes: Routes = [
     } 
   },
   { 
-    path: 'posts', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule), 
-    data: {
-      "title": "Posts - Jeff Schoonover, Angular development"
-    } 
-  },
-  { 
     path: 'about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule), 
     data: {
       "title": "About Jeff - Jeff Schoonover, Angular development"
@@ -34,8 +28,14 @@ const routes: Routes = [
       "title": "Learn in Public - Jeff Schoonover, Angular development"
     } 
   },
-//{ path: '404', component: NotFoundComponent },
-  //{ path: '**', redirectTo: '/404' }
+  { 
+    path: 'posts', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule), 
+    data: {
+      "title": "Posts - Jeff Schoonover, Angular development"
+    } 
+  },
+  // { path: '404', component: NotFoundComponent },
+  // { path: '**', redirectTo: '/404' }
   
   //{ path: 'join-email-list', loadChildren: () => import('./join-email/join-email.module').then(m => m.JoinEmailModule), data: {"title": "Join E-mail"} },
 

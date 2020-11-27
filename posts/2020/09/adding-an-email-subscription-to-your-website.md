@@ -9,8 +9,6 @@ tags:
   - jeffschoonover.dev
 ---
 
-## Adding a email subscription to your website
-
 I really wanted to add a way for people following along with me to get an email when the site updates, instead of having to visit all the time.  Back in the day, RSS (Really Simple Syndication) feeds were all the rage, but they have gone down in popularity and I've always preferred email anyways.  But making a form to capture email addresses and then manually maintaining a list was not something I was interested in.  There are tons of services out there and I was looking for something simple.  Don't need a landing page and I don't plan on heavy marketing, it is just a service for those interested in my site.  I checked 2 of my favorite websites to see what they did:
 
 1. [Mr. Money Mustache](https://www.mrmoneymustache.com/) blogs about finance and early retirement.  He uses WordPress, which automatically creates an RSS feed for your blog that you can then use to send emails.  The service he uses is a Google service called Feedburner, which is free to use and really simple.  What stopped me is that it requires an RSS feed, and I don't care enough about them to build one right now.

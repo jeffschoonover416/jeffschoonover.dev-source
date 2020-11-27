@@ -9,8 +9,6 @@ tags:
 slug: css-responsive-grid-layout
 ---
 
-## Control the way your website looks on mobile with CSS grid layout
-
 I currently have 2 lists of blog posts (one on the topic of this website, and the other on plans for an app) that I am showing at the same time, and want to control when the lists are side by side (on a desktop with plenty of horizontal space), and when they are on top of each other (on a phone).  When I disabled Angular on this website, the [Angular Flex Layout](https://github.com/angular/flex-layout) media queries stopped working.  Which is understandable!  CSS to the rescue, again.  CSS Tricks has an excellent article by Juan Martin Garcia on [making responsive layouts without media queries](https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/).  Following that tutorial, I was able to set how the page adjusts for screen width.  The lists are all enclosed in one `<div>` with the CSS class "blog-posts".  Here is the CSS for that class in `styles.css`:
 
 ```css

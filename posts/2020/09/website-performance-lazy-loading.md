@@ -9,8 +9,6 @@ tags:
   - jeffschoonover.dev
 ---
 
-## Decrease your website's initial load size by lazy loading modules
-
 Initially I had this site organized with just the app module (which every Angular project has) and a Blog module that was set up by the Scully schematics.  Every other page was a component in the app module.  By default, Angular loads all the data for these components as soon as someone visits the site, which increases the initial load size.  Right now for me it is not too much, but every example of an Angular/Scully project that I've seen has each page set apart in its own module, and each module is lazy loaded.  This means that Angular only loads the data for that module when that page is navigated to.  From the [Angular website](https://angular.io/guide/lazy-loading-ngmodules):
 
 >By default, NgModules are eagerly loaded, which means that as soon as the app loads, so do all the NgModules, whether or not they are immediately necessary. For large apps with lots of routes, consider lazy loading—a design pattern that loads NgModules as needed. Lazy loading helps keep initial bundle sizes smaller, which in turn helps decrease load times.

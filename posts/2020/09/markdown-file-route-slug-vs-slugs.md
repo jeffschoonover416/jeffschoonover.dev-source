@@ -9,8 +9,6 @@ tags:
   - jeffschoonover.dev
 ---
 
-## How to specify the route(s) for your rendered markdown files using "slug" and "slugs" in your markdown YAML header
-
 You can put a [YAML](https://yaml.org/) header at the top (must be at the very top) of your markdown files with all the meta-data you want such as title, author, date, etc.  The header fields used to specify the route for that file when it is rendered are published, slug, and slugs.  Let's go through the different combinations one by one.  Before we start though, I am using the contentFolder route for my blog markdown files, in a folder called "posts."  Here is the relevant part of the config file:
 
 ```js

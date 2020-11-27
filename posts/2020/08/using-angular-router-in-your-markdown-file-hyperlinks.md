@@ -1,5 +1,5 @@
 ---
-title: Using Angular's router in your Markdown file hyperlinks
+title: Using Angular's router in your Markdown file hyperlinks with Scully
 description: Here is the correct hyperlink syntax in Markdown to ensure that your local links respect the Angular router, so your site doesn't refresh each time you click a link
 published: true
 author: Jeff Schoonover
@@ -8,8 +8,6 @@ date: '2020-08-30'
 tags:
   - jeffschoonover.dev
 ---
-
-## Using Angular's router in your Markdown file hyperlinks with Scully
 
 Hyperlink syntax is pretty easy in both HTML and Markdown.  If I was trying to link to my About page, it would look like this:
 

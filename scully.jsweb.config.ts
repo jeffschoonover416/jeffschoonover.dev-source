@@ -14,9 +14,9 @@ export const config: ScullyConfig = {
   defaultPostRenderers: postRenderers,
   outDir: './dist/static',
   routes: {
-    '/posts/:id': {
+    '/posts/:slug': {
       type: 'contentFolder',
-      id: {
+      slug: {
         folder: "./posts"
       }
     },

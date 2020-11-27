@@ -1,5 +1,5 @@
 ---
-title: Display a list of your posts sorted by date with Angular and Scully
+title: How to display a list of your posts sorted by date with Angular and Scully
 description: How to use *ngFor and the async pipe in combination with Scully's route service to display a list of markdown blog posts by date.
 published: true
 author: Jeff Schoonover
@@ -8,8 +8,6 @@ date: '2020-09-01'
 tags:
   - jeffschoonover.dev
 ---
-
-## How to display a list of your posts sorted by date with Angular and Scully
 
 I linked these earlier, but here are background links:
 

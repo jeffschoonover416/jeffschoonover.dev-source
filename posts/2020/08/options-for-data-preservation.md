@@ -9,8 +9,6 @@ tags:
   - routerbase
 ---
 
-## Current options for materials data preservation
-
 In the [last post](/posts/2020/08/motivation-to-make-routerbase), I went through how most engineers store project data with PowerPoint, Excel and Outlook, and organize that data with an elaborate folder structure on their computer.  Using these tools, it is hard to:
 
 1. Keep track of the status of samples through a workflow

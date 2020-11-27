@@ -9,8 +9,6 @@ tags:
   - jeffschoonover.dev
 ---
 
-## Improve your website's performance by embedding SVG icons
-
 As I am building this website, I am realizing that the less I depend on someone else (even Google) to load my website, the better off I'll be.  As a small example, I use a couple [Material Design Icons](https://material.io/resources/icons/) on this site, and the easiest way to use them is to have your website look them up on Google's servers whenever it loads.  It is only 42kb for all the icons, and it makes including them a breeze.  But there is a way to include the individual icons directly in your HTML code that does not require an external resource and uses much less bandwidth.  The icons are available as Scalar Vector Graphics files.
 
 An SVG file is just text that allows you to draw shapes in a browser by specifying vectors.  It is an open graphics format in wide use on the web.  Since vectors can be increased in size without losing resolution, the images do not look pixelated at large scales.  Since you are drawing lines rather than telling the browser the shade of every individual pixel, the file size is small.  You can learn more about the SVG format, its advantages and how to make graphics with it by Googling, but a good first stop is the [SVG page](https://www.w3schools.com/graphics/svg_intro.asp) at W3schools.  (As a side note, the [D3 visualization library](https://d3js.org/) uses SVG to make amazing, interactive charts online).

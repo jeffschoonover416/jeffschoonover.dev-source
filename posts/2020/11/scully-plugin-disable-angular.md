@@ -9,8 +9,6 @@ tags:
   - jeffschoonover.dev
 ---
 
-## Get much faster load times on your Scully static website with the Scully Plugin Disable Angular
-
 It was time to finally disable Angular on this website.  The only thing Angular was doing (once the site was built and deployed) was toggle a dropdown menu button.  That is overkill for the performance hit the site was taking by bootstrapping Angular on top of the static site.  Also, every time I added a new post I had to change the hash in the [Content Security Policy](/posts/2020/10/implementing-content-security-policy-netlify/) for the Scully Transfer State script that gives the Angular app the necessary data to render the site.  True, I did this to myself with a strict CSP, but how much simpler life would be if this simple blog was truly just a static site!
 
 Disabling Angular was the easy part.  Sam Vloeberghs has written a Scully plugin called [Scully Plugin Disable Angular](https://www.npmjs.com/package/scully-plugin-disable-angular), and written an [article about disabling Angular](https://samvloeberghs.be/posts/disabling-angular-when-statically-generating-with-scully/) on his website.  It was straightforward to add to my app and those links should be the first on your list to read if you are thinking of doing it.  

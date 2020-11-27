@@ -9,8 +9,6 @@ tags:
   - jeffschoonover.dev
 ---
 
-## Filter blog posts by tag using Scully
-
 I've written over 20 posts on building this website, and am getting ready to switch gears and start focusing most of my energy and writing on writing an Angular app.  To make it easy for visitors to find posts on their topic of interest (website vs app) I've added a tag to each post and am sorting them by tag.  Here is the YAML header for this post with the `tags` field added:
 
 ```yaml

@@ -9,8 +9,6 @@ tags:
   - jeffschoonover.dev
 ---
 
-## You can ignore these error messages at the end of Scully builds in Windows
-
 If you are using Windows, you will probably see a family of errors at the end of your Scully builds.  They look like this:
 
 ```bash

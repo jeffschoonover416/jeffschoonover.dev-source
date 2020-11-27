@@ -9,8 +9,6 @@ tags:
   - jeffschoonover.dev
 ---
 
-## Code block syntax highlighting in Markdown files with Scully
-
 As I started writing posts that included lines of code, I immediately missed the syntax highlighting that we take for granted in any editor and on most coding websites.  Syntax highlighting makes code much easier to read.  For example, compare a line of javascript code without highlighting `return ((+new Date(postB['date'])) - (+new Date(postA['date'])));` to one with highlighting:
 
 ```js

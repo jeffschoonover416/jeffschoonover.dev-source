@@ -9,8 +9,6 @@ tags:
   - jeffschoonover.dev
 ---
 
-## Adding a responsive Angular Material toolbar to your website
-
 Follow [the guide](https://material.angular.io/guide/getting-started) to add Angular Material to your Angular app.  Once it is added, you will import every component you actually use individually in `src/app/material.module.ts`.  I have found that when something isn't working, it is often because I haven't imported it correctly.  The [Angular Material components](https://material.angular.io/components/categories) page has all the components and instructions on exactly how to import them to your project.
 
 In addition to adding Angular Material, you should also add [Angular Flex-Layout](https://github.com/angular/flex-layout).  This will make it easier to layout the toolbar and make it Responsive to different screen sizes (i.e. mobile).  Installation instructions and usage documentation at the link above are excellent.

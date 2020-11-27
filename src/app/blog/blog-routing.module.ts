@@ -5,13 +5,13 @@ import {BlogComponent} from './blog.component';
 
 const routes: Routes = [
   {
-    path: ':id',
+    path: ':slug',
     component: BlogComponent,
   },
   {
     path: '**',
-    component: BlogComponent,
-  },
+    component: BlogComponent
+  }
 ]
   
 

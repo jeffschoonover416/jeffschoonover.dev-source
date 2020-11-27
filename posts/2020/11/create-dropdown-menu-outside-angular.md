@@ -1,5 +1,5 @@
 ---
-title: How to create a dropdown menu with Javascript in a Scully-Angular project with Angular disabled
+title: How to create a click dropdown menu with Javascript in a Scully-Angular project with Angular disabled
 description: How to create a click dropdown menu with Javascript in a Scully-Angular project with Angular disabled.  
 published: true
 author: 'Jeff Schoonover'
@@ -8,8 +8,6 @@ slug: dropdown-menu-script-when-angular-disabled
 tags:
   - jeffschoonover.dev
 ---
-
-## How to create a click dropdown menu with Javascript in a Scully-Angular project with Angular disabled  
 
 Once Angular is disabled, any Javascript that you need to actually run your website (not just build and render each page) will need to be added separately.  I learned from [Sam Vloeberghs source code](https://github.com/samvloeberghs/kwerri-oss/tree/master/projects/samvloeberghs/src) that one good way to do this is to add it directly to your project's `index.html` file.  The script will then be copied in each static page that Scully generates for your site (every route in the `scully-routes.json` file).
 

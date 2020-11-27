@@ -19,6 +19,7 @@ export class TitleMetadataService {
     readonly tagDescription: string = 'Learn to build fast, secure websites with Angular and Scully, and build desktop apps with Angular and Electron';
     readonly urlPrefix: string = 'https://jeffschoonover.dev';
     readonly siteName: string = 'Jeff Schoonover';
+    readonly author: string = 'Jeff Schoonover';
     readonly userTwitter: string = '@jjschooney';
 
     setTitleAndTags() {
@@ -36,10 +37,11 @@ export class TitleMetadataService {
         this.srs.getCurrent().subscribe(
           link => {
             this.meta.updateTag({ name: 'twitter:url', content: this.urlPrefix + this.router.url });
+            this.meta.updateTag({ name: 'author', content: this.author });
             this.meta.updateTag({ name: 'og:url', content: this.urlPrefix + this.router.url });
             this.meta.updateTag({ name: 'og:site_name', property: 'og:site_name', content: this.siteName});
-            this.meta.updateTag({ name: 'twitter:creator', content: this.userTwitter});
-            this.meta.updateTag({ name: 'twitter:site', content: this.userTwitter});
+            this.meta.updateTag({ name: 'twitter:creator', content: this.userTwitter });
+            this.meta.updateTag({ name: 'twitter:site', content: this.userTwitter });
             
             if (link?.title) {
               this.titleService.setTitle(link.title);
