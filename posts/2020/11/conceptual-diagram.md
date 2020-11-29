@@ -13,6 +13,9 @@ slugs:
 ---
 ## Conceptual diagrams
 
+> Weeks of coding can save you hours of planning
+>> *Unknown*
+
 If I've heard it once, I've heard it a thousand times: you need to plan out software before you start coding.  Just like you need to outline a paper or talk before you start typing or making slides.  If you fail to plan, then plan to fail!  Think of starting construction on a house, bridge, or car before designing it.  So as much as I want to dive into the code, I will spend some time on the plan.
 
 Coursera course on Conceptual design and object oriented programming.  Trying to find more perspectives on this led me to the work of Daniel Jackson at MIT, who is an advocate of designing software by concepts.  Check out one of his lectures on YouTube or lecture notes on his Software Design course website.
@@ -26,3 +29,4 @@ The first question to wrestle with in my data model is the relationship between 
 
 Jackson recommends using existing concepts whenever possible to avoid confusion.  Maybe tasks and steps are like folders and files.  A folder may have many layers of other folders inside it, and each folder can have lots of files, but a file does not have folders or other files inside it.  A task is actually a special kind of folder, in that it allows defined associations between steps and other tasks rather than just grouping them into one collection.  Since folders can be nested, Jackson recommends  
 
+Templates - linked to sequenceItem structures
