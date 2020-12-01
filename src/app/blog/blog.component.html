@@ -1,5 +1,9 @@
 <div class="container">
-    <h1 *ngIf="currentPost$ | async as currentPost"><h2>{{currentPost.title}}</h2></h1>
+    <div *ngIf="currentPost$ | async as currentPost">
+        <h1><h2>{{currentPost.title}}</h2></h1>
+        <p>{{currentPost.date | date: 'mediumDate'}}</p>
+        <br>
+    </div>
     <scully-content></scully-content>
 </div>
 
