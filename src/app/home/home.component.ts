@@ -25,7 +25,7 @@ export class HomeComponent {
       if (!route.tags) {
         return false;
       } else {
-        return(route.tags.includes("routerbase"));
+        return(route.tags.includes("routernote"));
       };
     })),
     map((blogs) => blogs.sort((a, b) => (a.date < b.date ? 1 : -1)))

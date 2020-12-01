@@ -155,3 +155,7 @@ img {
 summary {
     cursor: pointer;
 }
+
+figcaption {
+    font-style: italic;
+}

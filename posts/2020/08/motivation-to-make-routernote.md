@@ -1,12 +1,14 @@
 ---
-title: Motivation to make Routerbase
+title: Motivation to make Routernote
 description: Why does the world need more productivity software?  This post explains the motivation to make software to help materials engineers keep their specimens and parts organized 
 publish: True
 authorName: Jeff Schoonover
-slug: motivation-to-make-routerbase
+slug: motivation-to-make-routernote
 date: '2020-08-16'
 tags:
-  - routerbase
+  - routernote
+slugs: 
+  - motivation-to-make-routerbase
 ---
 
 One of my responsibilities as a materials engineer is to shepherd research and development samples from the initial creation through all their required processing, testing and analysis.  This can get complicated pretty quickly because for a given batch of samples there are multiple ways of making a sample (casting, forging, welding, additive, etc.), multiple post-process conditions to assess, and a variety of testing and analysis.  Associated with each step will be the process or test parameters, vendor certifications, analyses, notes, e-mails and pictures.  Associated with the overall campaign/batch will be notes and files on the objective and context.

@@ -9,7 +9,7 @@ tags:
   - jeffschoonover.dev
 ---
 
-This website exists to publish my journey of learning how to code and making Routerbase, software that will help me stay organized at work.  My goal was to use the process of building the website to learn things I would need to know anyway to make Routerbase.  I'm making Routerbase with [Angular](https://angular.io/), open source software for making web apps.  I figured as long as I'm learning Angular I might as well use it for the website too, even though it is a bit overkill.
+This website exists to publish my journey of learning how to code and making Routernote, software that will help me stay organized at work.  My goal was to use the process of building the website to learn things I would need to know anyway to make Routernote.  I'm making Routernote with [Angular](https://angular.io/), open source software for making web apps.  I figured as long as I'm learning Angular I might as well use it for the website too, even though it is a bit overkill.
 
 Why overkill?  It takes a lot of complicated stuff to build and run a web app, because the internet was originally static views that did not change much, but applications have to update the view all the time.  The internet today runs with 3 programming languages:
 
