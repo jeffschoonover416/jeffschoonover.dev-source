@@ -50,10 +50,10 @@ With all that in mind, here is my first pass at the model for Router, Step, and 
 
 <br>
 
-![First iteration data model for router, step, and link](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606802390/jsdevblog/20201201-data-model-router-step-link_dbneqr.png)
+![First iteration data model for router, step, and link](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606889575/jsdevblog/20201201-data-model-router-step-link_piqiye.png)
 <figcaption>First data model for Router, Step and Link concepts</figcaption>
 <br>
 
 I am not happy with the fact that this model does not show the relationship between links and steps, or links and routers.  But I think these three have enough in common that having a general object for them will help in the long run.
 
-Next, defining the Tag and Template concepts and adding them to the model.  Happy coding!
+Next, defining Template and Tag concepts and adding them to the model.  Happy coding!
