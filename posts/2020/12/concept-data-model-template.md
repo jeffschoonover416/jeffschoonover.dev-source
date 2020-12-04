@@ -23,7 +23,7 @@ With all that said, what is the purpose of a template?  Daniel Jackson argues th
 
 <br>
 
-![Concept specificity](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606886588/jsdevblog/MIT-4415-concept-specificity_tctm3b.jpg)
+![Concept specificity](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606886588/jsdevblog/2020Dec/MIT-4415-concept-specificity_tctm3b.jpg)
 <figcaption>Slide on concept-purpose specificity from Fall 2020 MIT 4415 lecture <a href="https://canvas.mit.edu/courses/4415/pages/tuesday-10-slash-13-concept-design-rules?module_item_id=146785">10/13 Concept Design Rules</a></figcaption>
 <br>
 
@@ -39,12 +39,12 @@ So what should this look like in the data model?  Well, templates are just nodes
 
 <br>
 
-![data model a boolean as a subset](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606887787/jsdevblog/MIT-4415-boolean-subset_wk3wjy.jpg)
+![data model a boolean as a subset](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606887787/jsdevblog/2020Dec/MIT-4415-boolean-subset_wk3wjy.jpg)
 <figcaption>Slide on how to model a boolean from Fall 2020 MIT 4415 <a href="https://canvas.mit.edu/files/719760/download?download_frd=1">Data Modeling Errors</a> pdf file (link to download)</figcaption>
 <br>
 
 With that in mind, here is the modified data model:
-![updated data model with Template added](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606889568/jsdevblog/20201202-data-model-router-step-link-template_f5mwo5.png)
+![updated data model with Template added](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606889568/jsdevblog/2020Dec/20201202-data-model-router-step-link-template_f5mwo5.png)
 <br>
 
 Next is Tags, happy coding!
