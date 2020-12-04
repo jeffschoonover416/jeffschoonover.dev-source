@@ -9,7 +9,8 @@ tags:
 slug: concept-data-model-tag
 ---
 
-This post is a continuation of a series of posts on designing my app Routerbase using concepts, and 
+This post is a continuation of a series of posts on designing my app Routerbase using concepts.
+
 The concept of a tag is familiar.  I'm going to use Jackson's analysis of the Gmail Label to define:
 
 1. **Name**: Tag
