@@ -24,7 +24,7 @@ To work through this, I'm going to go over 3 slides from Jackson's Fall 2020 MIT
 
 <br>
 
-![Don't split a generalization](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606797700/jsdevblog/MIT-4415-data-model-generalizations_gh6xkh.jpg)
+![Don't split a generalization](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606797700/jsdevblog/2020Dec/MIT-4415-data-model-generalizations_gh6xkh.jpg)
 <figcaption>Slide from Fall 2020 MIT 4415 lecture <a href="https://canvas.mit.edu/courses/4415/pages/monday-10-slash-05-data-modeling-part-1?module_item_id=146777">10/05 Data Modeling Part 1</a></figcaption>
 <br>
 
@@ -32,7 +32,7 @@ The above slide shows the idea of generalizing to avoid duplication of code.  Th
 
 <br>
 
-![Don't split a relation](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606797677/jsdevblog/MIT-4415-data-model-relations_puuwff.jpg)
+![Don't split a relation](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606797677/jsdevblog/2020Dec/MIT-4415-data-model-relations_puuwff.jpg)
 <figcaption>Slide from Fall 2020 MIT 4415 <a href="https://canvas.mit.edu/files/719760/download?download_frd=1">Data Modeling Errors</a> pdf file (link to download)</figcaption>
 <br>
 
@@ -40,7 +40,7 @@ This second slide is another take on the idea of generalization.  Generalize whe
 
 <br>
 
-![Don't use subsets for relational state](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606797685/jsdevblog/MIT-4415-data-model-subsets_mmgaa0.jpg)
+![Don't use subsets for relational state](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606797685/jsdevblog/2020Dec/MIT-4415-data-model-subsets_mmgaa0.jpg)
 <figcaption>Slide from Fall 2020 MIT 4415 <a href="https://canvas.mit.edu/files/719760/download?download_frd=1">Data Modeling Errors</a> pdf file (link to download)</figcaption>
 <br>
 
@@ -50,7 +50,7 @@ With all that in mind, here is my first pass at the model for Router, Step, and 
 
 <br>
 
-![First iteration data model for router, step, and link](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606889575/jsdevblog/20201201-data-model-router-step-link_piqiye.png)
+![First iteration data model for router, step, and link](https://res.cloudinary.com/dmntqdxsy/image/upload/v1606889575/jsdevblog/2020Dec/20201201-data-model-router-step-link_piqiye.png)
 <figcaption>First data model for Router, Step and Link concepts</figcaption>
 <br>
 

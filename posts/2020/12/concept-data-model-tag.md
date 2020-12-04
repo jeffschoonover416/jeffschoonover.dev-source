@@ -25,4 +25,4 @@ Since tags are associated with nodes, I will make the data model with a regular 
 ![data model with tags added](https://res.cloudinary.com/dmntqdxsy/image/upload/v1607055152/jsdevblog/2020Dec/20201202-data-model-router-step-link-template-tag_ftcja6.png)
 <br>
 
-That's it for the data model, for now!
+That's it for the data model, for now!  Next will be wireframes - simple sketches that provide an outline of the screens and dialogs in the app.
