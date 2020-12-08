@@ -3,7 +3,7 @@ title: Concept data model for Tag
 description: As part of designing software by concepts, defining the Tag concept for Routernote and adding it to the data model
 published: true
 author: 'Jeff Schoonover'
-date: '2020-12-3'
+date: '2020-12-7'
 tags:
     - routernote
 slug: concept-data-model-tag
@@ -24,5 +24,17 @@ Gmail also has categories, a mistake that I will avoid, but I do want to have ca
 Since tags are associated with nodes, I will make the data model with a regular arrow and a descriptive name for the relationship:
 ![data model with tags added](https://res.cloudinary.com/dmntqdxsy/image/upload/v1607055152/jsdevblog/2020Dec/20201202-data-model-router-step-link-template-tag_ftcja6.png)
 <br>
+
+I want to be able to group my tags into categories, and those categories should probably have sub-categories (although I myself do not need sub-categories).  To handle that I introduce another superset as a generalization:
+![data model with tag categories](https://res.cloudinary.com/dmntqdxsy/image/upload/v1607394390/jsdevblog/2020Dec/20201207-data-model-router-step-link-template-tag-category_oawarl.png)
+<br>
+
+Here is what I came up with for the tagCategory concept:
+
+1. **Name**: tagCategory
+2. **Purpose**: Group tags for fast filtering
+3. **Structure**: tagCategoryName: [tags]
+4. **Actions**: Add/create tagNode to tagCategory, remove/delete tagNode from tagCategory
+5. **Operational principle**: if a tagCategory contains a set of tags S, then if you filter the data by S, you will retrieve all data with at least one of the tags in S.
 
 That's it for the data model, for now!  Next will be wireframes - simple sketches that provide an outline of the screens and dialogs in the app.
