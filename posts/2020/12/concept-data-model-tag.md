@@ -25,7 +25,7 @@ Since tags are associated with nodes, I will make the data model with a regular 
 ![data model with tags added](https://res.cloudinary.com/dmntqdxsy/image/upload/v1607055152/jsdevblog/2020Dec/20201202-data-model-router-step-link-template-tag_ftcja6.png)
 <br>
 
-I want to be able to group my tags into categories, and those categories should probably have sub-categories (although I myself do not need sub-categories).  To handle that I introduce another superset as a generalization:
+I want to be able to group my tags into categories, and those categories should have sub-categories.  To handle that I introduce another superset as a generalization:
 ![data model with tag categories](https://res.cloudinary.com/dmntqdxsy/image/upload/v1607394390/jsdevblog/2020Dec/20201207-data-model-router-step-link-template-tag-category_oawarl.png)
 <br>
 
