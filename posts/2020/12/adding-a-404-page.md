@@ -13,7 +13,9 @@ This site is at a sufficient point to fulfill its purpose as documentation for t
 
 This site is hosted by Netlify, and they will [automatically redirect to a custom 404 page](https://docs.netlify.com/routing/redirects/redirect-options/#custom-404-page-handling) if a `404.html` file exists at the root folder of your site.  This site is hosted on Github and automatically built by Netlify each time I make a change (setup instructions by Tara Z. Manicsic in the Netlify blog post [Creating an Angular Jamstack Blog](https://www.netlify.com/blog/2020/07/14/creating-an-angular-jamstack-blog/)).  This means that the `404.html` file needs to be part of the build if I'm going to take advantage of this free offer by Netlify.
 
-It is worth noting here that you can handle 404 redirects within the Angular router.  You can search "angular router 404" and get all sorts of instructions, but the main idea is that you add a [wildcard "**" route](https://angular.io/guide/router#setting-up-wildcard-routes) at the end of your root router that catches any routes that get navigated to and redirects them to a custom component that you can make.  Here is what it might look like:
+It is worth noting here that you can handle 404 redirects within the Angular router.  You can search "angular router 404" and get all sorts of instructions, but the main idea is that you add a [wildcard "**" route](https://angular.io/guide/router#setting-up-wildcard-routes) at the end of your root router that catches any routes that get navigated to and redirects them to a custom component that you can make.  
+
+Here is what it might look like:
 
 ```js
 //app-routing.module.ts
@@ -36,6 +38,8 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 ```
+
+<br>
 
 The thing is, I already have a wildcard route set up on my site that points to my `BlogComponent`, because Scully discovers these routes when it looks in the folder with all my posts.  This folder has nested sub-folders for the year and month, and the sub-folders are used to help generate the route for that post.  To avoid having to add in a new route every month, I give Scully free reign to create whatever routes it wants to with the wildcard route.
 
