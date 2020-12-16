@@ -34,10 +34,10 @@ const routes: Routes = [
       "title": "Posts - Jeff Schoonover, Angular development"
     } 
   },
-  // { path: '404', component: NotFoundComponent },
-  // { path: '**', redirectTo: '/404' }
+  { path: '404', component: NotFoundComponent },
   
-  //{ path: 'join-email-list', loadChildren: () => import('./join-email/join-email.module').then(m => m.JoinEmailModule), data: {"title": "Join E-mail"} },
+  
+  { path: 'join-email-list', loadChildren: () => import('./join-email/join-email.module').then(m => m.JoinEmailModule), data: {"title": "Join E-mail"} },
 
 ];
 
