@@ -1,12 +1,12 @@
 ---
-title: Introduction to actually scaling SVG (Scalar Vector Graphics) images 
+title: Introduction to scaling inline SVG (Scalar Vector Graphics) images 
 description: The Scalar Vector Graphics image format is a text-based graphics format based on drawing lines and curves along coordinates.  I add an SVG maze to my website and set it up to scale responsively with the screen size. 
 published: true
 author: 'Jeff Schoonover'
 date: '2020-12-16'
 tags:
     - jeffschoonover.dev
-slug: 
+slug: scale-svg-images-inline-html
 ---
 
 
@@ -37,7 +37,7 @@ There is an SVG attribute that does what we want: viewBox.  I learned about it i
 
 <br>
 
-The first two numbers ("0 0") are the x and y origins, and the second two numbers ("324 324") are the internal SVG x and y dimensions.  If your coordinate system origin was in the exact center of your image, you would set `viewBox="162 162 324 324"`, but the origin in SVG is usually in the upper left corner by default.  With that replacement, the maze looks good on a phone and takes up the entire container width on desktop.
+The first two numbers ("0 0") are the x and y origins, and the second two numbers ("324 324") are the internal SVG x and y dimensions.  If your coordinate system origin was in the exact center of your image, you would set `viewBox="162 162 324 324"`, but the origin in SVG is usually in the upper left corner by default.  With the 0 0 324 324 replacement, the maze looks good on a phone and takes up the entire container width on desktop.  Note that this solution works when you put the `<svg>` code directly in your HTML - if you enclose your SVG in another tag such as `<img>` you may need a slightly more complex solution.  See the CSS Tricks article for more info.
 
 Happy coding and don't get lost!
 
