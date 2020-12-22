@@ -3,7 +3,7 @@ title: Concept data model for Template
 description: As part of designing software by concepts, defining the Template concept for Routernote and adding it to the data model
 published: true
 author: 'Jeff Schoonover'
-date: '2020-12-2'
+date: '2020-12-02'
 tags:
     - routernote
 slug: concept-data-model-template

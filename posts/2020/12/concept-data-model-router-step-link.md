@@ -3,7 +3,7 @@ title: Concept data model for Router, Step and Link
 description: As part of designing software by concepts, a first attempt at a data model showing the relationship between the Router, Step, and Link concepts in RouterNote
 published: true
 author: 'Jeff Schoonover'
-date: '2020-12-1'
+date: '2020-12-01'
 tags:
     - routernote
 slug: concept-data-model-router-step-link

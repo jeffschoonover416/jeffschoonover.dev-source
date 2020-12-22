@@ -3,7 +3,7 @@ title: Concept data model for Tag
 description: As part of designing software by concepts, defining the Tag concept for Routernote and adding it to the data model
 published: true
 author: 'Jeff Schoonover'
-date: '2020-12-7'
+date: '2020-12-07'
 tags:
     - routernote
 slug: concept-data-model-tag
