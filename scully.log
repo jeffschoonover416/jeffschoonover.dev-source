@@ -664,3 +664,196 @@ Cleaned up .\dist\static folder.
 Cleaned up .\dist\static folder.
 Cleaned up .\dist\static folder.
 Cleaned up .\dist\static folder.
+Cleaned up .\dist\static folder.
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/08/building-a-personal-website-with-angular-and-scully[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/08/building-a-personal-website-with-angular-and-scully[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/08/customize-the-browser-tab-display-with-angular[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/08/customize-the-browser-tab-display-with-angular[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/08/motivation-to-make-routernote[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/08/motivation-to-make-routernote[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/08/motivation-to-make-routerbase[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/08/motivation-to-make-routerbase[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/08/current-options-for-materials-data-preservation[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/08/current-options-for-materials-data-preservation[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/08/using-angular-router-in-markdown[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/08/using-angular-router-in-markdown[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/09/adding-an-email-subscription-to-your-website[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/09/adding-an-email-subscription-to-your-website[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/09/adding-a-responsive-angular-material-toolbar[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/09/adding-a-responsive-angular-material-toolbar[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/09/modern-website-styling-with-angular-material[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/09/modern-website-styling-with-angular-material[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/09/code-block-syntax-highlighting-in-markdown-with-scully[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/09/code-block-syntax-highlighting-in-markdown-with-scully[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/09/display-a-list-of-posts-sorted-by-date-with-angular-and-scully[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/09/display-a-list-of-posts-sorted-by-date-with-angular-and-scully[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/09/ignore-these-error-messages-scully-build-windows[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/09/ignore-these-error-messages-scully-build-windows[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/09/improve-website-performance-by-embedding-icons[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/09/improve-website-performance-by-embedding-icons[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/09/markdown-file-route-slug-vs-slugs[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/09/markdown-file-route-slug-vs-slugs[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/09/measure-the-performance-of-your-website-with-lighthouse[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/09/measure-the-performance-of-your-website-with-lighthouse[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/09/scully-transfer-state-implementation[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/09/scully-transfer-state-implementation[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/09/decrease-initial-load-size-by-lazy-loading-modules[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/09/decrease-initial-load-size-by-lazy-loading-modules[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+      
+
+      ----------------
+      Error, missing "[33m<scully-content>[39m" in route "[33m/posts/2020/10/content-security-policy-background[39m"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "[33mhttp://localhost:4200/posts/2020/10/content-security-policy-background[39m"
+      when you serve your app with [33mng serve[39m and then in the browsers console run:
+      [33mdocument.querySelector('scully-content')[39m
+      ----------------
+       The render plugin "[33mdisableAngular[39m has thrown the below error,
+              while trying to render route "[33m/posts/2020/10/content-security-policy-background[39m"
+              Scully will exitError: A stats(-es2015).json is required for the 'disableAngular' plugin.
+Please run 'ng build' with the '--stats-json' flag
+
+
+Cleaned up .\dist\static folder.
+Cleaned up .\dist\static folder.
+Cleaned up .\dist\static folder.
+Cleaned up .\dist\static folder.
+Cleaned up .\dist\static folder.
+Cleaned up .\dist\static folder.
+Cleaned up .\dist\static folder.
