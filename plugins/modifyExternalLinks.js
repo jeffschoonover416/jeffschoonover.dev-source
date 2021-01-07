@@ -5,7 +5,7 @@ function modifyExternalLinksPlugin (html) {
     //by default, only external links have noreferrer noopener.  This opens external links in a new tab
     //and lets the site know where the link is coming from.  since "noopener" is still there, there is 
     //no threat of tabnabbing
-    html = html.replaceAll('rel="noreferrer noopener"', 'rel="noopener" target="_blank"');
+    html = html.replace(/rel="noreferrer noopener"/g, 'rel="noopener" target="_blank"');
     
     return (html);
 };
