@@ -29,7 +29,7 @@
     "@angular/router": "~10.1.2",
     "@scullyio/init": "^1.0.1",
     "@scullyio/ng-lib": "^1.0.0",
-    "@scullyio/scully": "^1.0.0",
+    "@scullyio/scully": "^1.0.10",
     "@scullyio/scully-plugin-critical-css": "0.0.2",
     "ngx-seo": "^5.2.0",
     "rxjs": "~6.6.0",
