@@ -101,8 +101,13 @@ a {
 
 a[href^="http://"]::after, a[href^="https://"]::after {
     
-    content: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><polygon fill="black" points="12 5.038 6.962 10.066 5.668 8.772 8.502 5.961 0 5.961 0 4.116 8.502 4.116 5.691 1.282 6.984 0" transform="rotate(-40 6 5.033)"/></svg>');
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'%3E%3Cpolygon fill='black' fill-opacity='1' points='12 5.038 6.962 10.066 5.668 8.772 8.502 5.961 0 5.961 0 4.116 8.502 4.116 5.691 1.282 6.984 0' transform='rotate(-40 6 5.033)'/%3E%3C/svg%3E");
+    background-position-x: 50%;
+    background-position-y: center;
+    background-repeat: no-repeat;
     margin: 0 .15rem;
+    padding-right: 0.65rem;
+    content: "";
     
 }
 
