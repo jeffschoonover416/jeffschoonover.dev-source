@@ -110,6 +110,31 @@ a[href^="http://"]::after, a[href^="https://"]::after {
 
 <br>
 
-The icon itself is also in the above CSS snippet.  I got the SVG code for the icon by inspecting the element on Netlify's page.  It needs to be encoded into a URL to be put into the `content` property, which is easily done online.  I found [URL-encoder for SVG](https://yoksel.github.io/url-encoder/) to work really well.
+The icon itself is also in the above CSS snippet.  I got the SVG code for the icon by inspecting the element on Netlify's page.  It needs to be encoded into a URL to be put into the `content` property, which is easily done online.  I found [URL-encoder for SVG](https://yoksel.github.io/url-encoder/) to work really well.  This worked fine on my machine, but the icon was not rendered on the internet.  The reason was that the url was not in my Content Security Policy.  To get around this I did the more usual thing and put the SVG into a separate file in the `assets` folder, and then used a relative link in CSS.  With this approach I also went to the more common method of using background-image rather than content for the SVG (a COMPLETE and shameless copy of how Netlify does it).  Scully will copy the assets folder into the distribution, so that relative link should work in production.
+
+```css
+/* styles.css */
+
+a[href^="http://"]::after, a[href^="https://"]::after {
+    
+    background-image: url(/assets/external-link-icon.svg);
+    background-position-x: 50%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    margin: 0 .15rem;
+    padding-right: 0.65rem;
+    content: "";
+}
+```
+
+```html
+<!-- external-link-icon.svg -->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+  <polygon fill="black" fill-opacity="1" points="12 5.038 6.962 10.066 5.668 8.772 8.502 5.961 0 5.961 0 4.116 8.502 4.116 5.691 1.282 6.984 0" transform="rotate(-40 6 5.033)"/>
+</svg>
+```
+
+<br>
 
 These little details are the kind of thing I appreciate on other people's websites, so I'm happy I was able to learn about and incorporate them here without much trouble.  Happy coding!
