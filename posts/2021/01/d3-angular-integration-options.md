@@ -27,4 +27,4 @@ It is the same with a lot of physical products too.  It is hard to build somethi
 
 I'm going with path #2 for now.  There is enough to learn about D3 for now without trying to write it in Typescript, and knowing how to import and call Javascript inside Angular when I need to seems pretty useful.
 
-In the next post, we'll look at writing D3 in Javascript and importing it into an Angular Typescript component.  See you there!
+In the next post, we'll start looking at writing D3 in Javascript and importing it into an Angular Typescript component.  See you there!
