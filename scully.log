@@ -907,3 +907,19 @@ Using stored unhandled routes!.
 This is a development tool for Scully applications.
 You can ignore the warning (TLS) or run scully with --no-warning
 ****************************************************************************************
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------
+Route "/posts/2021/02/styling-d3-charts-angular-view-encapsulation" not provided by angular app
+
+      ----------------
+      Error, missing "<scully-content>" in route "/posts/2021/02/styling-d3-charts-angular-view-encapsulation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/posts/2021/02/styling-d3-charts-angular-view-encapsulation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+Cleaned up .\dist\static folder.

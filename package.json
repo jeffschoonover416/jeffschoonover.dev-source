@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "scully": "scully",
     "scully:serve": "scully serve",
-    "jamit": "ng build --stats-json && npm run scully -- --routeFilter '*2021*' && npm run scully serve",
+    "jamit": "ng build --stats-json && npm run scully -- --removeStaticDist --scanRoutes && npm run scully -- --watch",
     "jam-prod-test": "ng build --prod --stats-json && npm run scully -- --removeStaticDist --scanRoutes && npm run scully serve",
     "jam-prod": "ng build --prod --stats-json && npm run scully -- --removeStaticDist --scanRoutes",
     "blog-edit": "npm run scully -- --routeFilter '*2021/02*' && npm run scully -- --watch"
